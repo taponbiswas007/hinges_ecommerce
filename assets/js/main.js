@@ -34,8 +34,12 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('.menutogglebtn').click(function () {
+    $('.menutogglebtn').click(function (e) {
+        e.stopPropagation();
         $(this).toggleClass('active');
-        $('.navigation_area').toggleClass('navActive')
+    });
+
+    $(document).click(function () {
+        $('.menutogglebtn').removeClass('active');
     });
 });
