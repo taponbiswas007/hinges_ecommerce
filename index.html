@@ -47,8 +47,8 @@
                 </a>
                 <div class="navigation_items_area">
                     <!-- top link area -->
-                    <div class="d-flex top_link_area justify-content-between align-items-center gap-lg-5 gap-4">
-                        <div class="topbarlink_list d-flex justify-content-between align-items-center gap-3">
+                    <div class="d-flex top_link_area justify-content-lg-between justify-content-end align-items-center gap-xl-5 gap-3">
+                        <div class="topbarlink_list d-flex justify-content-between align-items-center gap-3 d-lg-flex d-none">
                             <a href="#">
                                 in stock
                             </a>
@@ -84,13 +84,13 @@
                                     <img src="assets/images/user-circle.svg" alt="">
                                 </a>
                                 <div class="position-relative">
-                                    <button class="menutogglebtn" type="button" id="dropdownMenuButton1"
+                                    <button class="menutogglebtn" type="button" id="extramenuitems"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                     </button>
-                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="extramenuitems">
                                         <li>
                                             <a class="dropdown-item mb-2" href="#">
                                                 <span>faq</span>
@@ -127,32 +127,98 @@
                         </div>
                     </div>
                     <!-- bottom link area -->
-                    <div class="bottomLinklist_area">
+                    <div class="bottomLinklist_area d-none d-lg-block">
                         <div class="bottomLinklist">
-                            <a href="#">
-                                <span class="link_content">BEDROOM</span>
-                                <img src="assets/images/arrowDown.svg">
-                            </a>
-                            <a href="#">
-                                <span class="link_content">DINING & KITCHEN</span>
-                                <img src="assets/images/arrowDown.svg">
-                            </a>
-                            <a href="#">
-                                <span class="link_content">LIVING ROOM</span>
-                                <img src="assets/images/arrowDown.svg">
-                            </a>
-                            <a href="#">
-                                <span class="link_content">HOME OFFICE</span>
-                                <img src="assets/images/arrowDown.svg">
-                            </a>
-                            <a href="#">
-                                <span class="link_content">Décor</span>
-                                <img src="assets/images/arrowDown.svg">
-                            </a>
-                            <a href="#">
-                                <span class="link_content">COLLECTIONS</span>
-                                <img src="assets/images/arrowDown.svg">
-                            </a>
+                            <div class="position-relative bottombarLink">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    BEDROOM
+                                    <img src="assets/images/arrowDown.svg" class="ms-1">
+                                </a>
+                                <div class="sublinkList_area position-absolute top-100 start-0">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bottombarLink">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    DINING & KITCHEN
+                                    <img src="assets/images/arrowDown.svg" class="ms-1">
+                                </a>
+                                <div class="sublinkList_area position-absolute top-100 start-0">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bottombarLink">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    LIVING ROOM
+                                    <img src="assets/images/arrowDown.svg" class="ms-1">
+                                </a>
+                                <div class="sublinkList_area position-absolute top-100 start-0">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bottombarLink">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    HOME OFFICE
+                                    <img src="assets/images/arrowDown.svg" class="ms-1">
+                                </a>
+                                <div class="sublinkList_area position-absolute top-100 start-0">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bottombarLink">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    Décor
+                                    <img src="assets/images/arrowDown.svg" class="ms-1">
+                                </a>
+                                <div class="sublinkList_area position-absolute top-100 start-0">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative bottombarLink">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    COLLECTIONS
+                                    <img src="assets/images/arrowDown.svg" class="ms-1">
+                                </a>
+                                <div class="sublinkList_area position-absolute top-100 start-0">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

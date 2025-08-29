@@ -336,14 +336,12 @@ img {
     column-gap: 20px;
 }
 
+
 .bottomLinklist a {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-}
-
-.bottomLinklist a span {
     font-family: Lato;
     font-weight: 500;
     font-style: Medium;
@@ -369,6 +367,60 @@ img {
     text-align: center;
     color: #ffffff;
     background: #FF3B30;
+}
+
+.sublinkList_area {
+    width: 220px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 8px 0;
+}
+
+.bottombarLink:hover .sublinkList_area {
+    display: block;
+}
+
+.sublinklist_area_inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sublinklist_area_inner ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #2D1817;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sublinklist_area_inner ul li a:hover {
+    background: #f5f5f5;
+    color: #9CB31A;
+    /* hover এ highlight */
+    border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+    .topbarlink_list a {
+        font-size: 13px;
+    }
+    .bottomLinklist a{
+        font-size: 13px;
+    }
+}
+@media (max-width: 992px) {
+    .top_link_area{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .logo {
+  width: 87px;
+}
 }
 
 /* header area end */
