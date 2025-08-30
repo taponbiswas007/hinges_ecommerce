@@ -409,18 +409,26 @@ img {
     .topbarlink_list a {
         font-size: 13px;
     }
-    .bottomLinklist a{
+
+    .bottomLinklist a {
         font-size: 13px;
     }
 }
+
 @media (max-width: 992px) {
-    .top_link_area{
+    .top_link_area {
         border-bottom: none;
         padding-bottom: 0;
     }
+
     .logo {
-  width: 87px;
+        width: 87px;
+    }
 }
+@media (max-width: 376px) {
+  .logo {
+    width: 66px;
+  }
 }
 
 /* header area end */
