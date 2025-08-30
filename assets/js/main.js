@@ -37,9 +37,17 @@ $(document).ready(function () {
     $('.menutogglebtn').click(function (e) {
         e.stopPropagation();
         $(this).toggleClass('active');
+        $('.user_auth_items .dropdown-menu').addClass('active');
+    });
+
+
+    $('.user_auth_items .dropdown-menu').click(function (e) {
+        e.stopPropagation();
     });
 
     $(document).click(function () {
         $('.menutogglebtn').removeClass('active');
+        $('.user_auth_items .dropdown-menu').removeClass('active');
     });
 });
+
