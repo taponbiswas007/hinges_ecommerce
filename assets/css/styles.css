@@ -141,6 +141,7 @@ a {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 /* typography end */
@@ -620,6 +621,17 @@ text-align: center;
 color: #000000;
 margin-bottom: 0;
 padding: 20px 0;
+}
+.shop_card_inner h4{
+  font-family: Forum;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 29.16px;
+letter-spacing: -0.65px;
+text-align: center;
+color: #000000;
+padding-bottom: 20px;
 }
 /* shop by collection area end */
 
