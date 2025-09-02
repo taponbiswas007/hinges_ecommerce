@@ -430,10 +430,11 @@ img {
         width: 87px;
     }
 }
+
 @media (max-width: 376px) {
-  .logo {
-    width: 66px;
-  }
+    .logo {
+        width: 66px;
+    }
 }
 
 /* header area end */
@@ -443,31 +444,35 @@ img {
 /* ============================================= */
 /* ===============Home page start=============== */
 /* ============================================= */
-.hero_item{
+.hero_item {
     aspect-ratio: 196/133;
     width: 196px;
 }
-.h-card{
+
+.h-card {
     background: #F2F2F7;
     border: 1px solid #8E8E93;
     border-radius: 7px;
 }
-.h-card .card-body img{
+
+.h-card .card-body img {
     height: 47px;
     width: 47px;
 }
-.h-card .card-body h1{
+
+.h-card .card-body h1 {
     font-family: Lato;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 16px;
-line-height: 18px;
-letter-spacing: 8%;
-text-align: center;
-text-transform: uppercase;
-color: #8E8E93;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 8%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8E8E93;
 }
-.c-card{
+
+.c-card {
     width: 100%;
     aspect-ratio: 304/184;
     border-radius: 69px;
@@ -475,12 +480,14 @@ color: #8E8E93;
     display: block;
     transition: all 0.3s ease;
 }
-.c-card-inner{
+
+.c-card-inner {
     position: relative;
     height: 100%;
     width: 100%;
 }
-.c-card-inner img{
+
+.c-card-inner img {
     position: absolute;
     top: 0;
     left: 0;
@@ -489,7 +496,8 @@ color: #8E8E93;
     object-fit: cover;
     object-position: center;
 }
-.c-card-inner::after{
+
+.c-card-inner::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -499,74 +507,83 @@ color: #8E8E93;
     z-index: 1;
     content: '';
 }
-.c-card-inner h1{
+
+.c-card-inner h1 {
     font-family: Lato;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 28px;
-line-height: 22px;
-letter-spacing: 0px;
-vertical-align: middle;
-text-transform: uppercase;
-text-align: center;
-width: 100%;
-color: #ffffff;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50% , -50%);
-z-index: 2;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 28px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
-.c-card:hover img{
+
+.c-card:hover img {
     transform: scale(1.02);
 }
 
 /* shop by collection area start */
-.shopBycollection_area h1{
+.shopBycollection_area h1 {
     font-family: Forum;
-font-weight: 400;
-font-style: Regular;
-font-size: 36px;
-text-align: center;
-line-height: 45px;
-letter-spacing: -1px;
-color: #000000;
-margin-bottom: 0;
-flex-shrink: 0;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 36px;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: -1px;
+    color: #000000;
+    margin-bottom: 0;
+    flex-shrink: 0;
 }
-.shopBycollection_area .v-border{
+
+.shopBycollection_area .v-border {
     height: 1px;
     width: 100%;
     background: #AEAEB2;
 }
-.shop_by_card{
+
+.shop_by_card {
     box-shadow: 0px 0px 15px 0px #0000000D;
     background: #FFFFFF;
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.shop_by_card:hover img{
+
+.shop_by_card:hover img {
     transform: scale(1.02);
 }
 
-.shopcard_img{
+.shopcard_img {
     width: 100%;
     aspect-ratio: 415/419;
     overflow: hidden;
 }
-.mshopcard_img{
+
+.mshopcard_img {
     width: 100%;
     aspect-ratio: 415/492;
     overflow: hidden;
 }
-.mshopcard_img img{
+
+.mshopcard_img img {
     height: 100%;
     width: 100%;
 }
-.mshop_card_inner{
+
+.mshop_card_inner {
     position: relative;
 }
-.mshop_card_inner::after{
+
+.mshop_card_inner::after {
     content: " ";
     position: absolute;
     top: 0;
@@ -576,30 +593,33 @@ flex-shrink: 0;
     background: #000000ba;
     z-index: 1;
 }
-.morecollection{
+
+.morecollection {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.morecollection h2{
+
+.morecollection h2 {
     font-family: Forum;
-font-weight: 400;
-font-style: Regular;
-font-size: 29.03px;
-line-height: 35.27px;
-letter-spacing: -0.78px;
-text-align: center;
-text-transform: capitalize;
-color: #ffffff;
-text-wrap: nowrap;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 29.03px;
+    line-height: 35.27px;
+    letter-spacing: -0.78px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-wrap: nowrap;
 }
-.morecollection span{
+
+.morecollection span {
     border-radius: 50%;
     background: #ffffff;
     display: flex;
@@ -609,114 +629,211 @@ text-wrap: nowrap;
     height: 37px;
     width: 37px;
 }
-.shop_card_inner p{
+
+.shop_card_inner p {
     font-family: Forum;
-font-weight: 400;
-font-style: Regular;
-font-size: 24px;
-text-transform: capitalize;
-line-height: 29.16px;
-letter-spacing: -0.65px;
-text-align: center;
-color: #000000;
-margin-bottom: 0;
-padding: 20px 0;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    text-transform: capitalize;
+    line-height: 29.16px;
+    letter-spacing: -0.65px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0;
+    padding: 20px 0;
 }
-.shop_card_inner h4{
-  font-family: Forum;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
-line-height: 29.16px;
-letter-spacing: -0.65px;
-text-align: center;
-color: #000000;
-padding-bottom: 20px;
+
+.shop_card_inner h4 {
+    font-family: Forum;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 29.16px;
+    letter-spacing: -0.65px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 20px;
 }
+
 /* shop by collection area end */
 
 /* new arrivals */
-.newarrivals_area h1{
+.newarrivals_area h1 {
     font-family: Forum;
-font-weight: 400;
-font-style: Regular;
-font-size: 36px;
-text-align: center;
-line-height: 45px;
-letter-spacing: -1px;
-color: #000000;
-margin-bottom: 0;
-flex-shrink: 0;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 36px;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: -1px;
+    color: #000000;
+    margin-bottom: 0;
+    flex-shrink: 0;
 }
-.newarrivals_area .v-border{
+
+.newarrivals_area .v-border {
     height: 1px;
     width: 100%;
     background: #AEAEB2;
 }
-.product_card{
+
+.product_card {
     box-shadow: 0px 1px 12px 0px #00000014;
     background: #FFFFFF;
     padding: 19px;
     padding-bottom: 31px;
 }
-.card_top_area h2{
+
+.card_top_area h2 {
     font-family: Lato;
-font-weight: 400;
-font-style: Regular;
-font-size: 24px;
-letter-spacing: 0%;
-vertical-align: middle;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
 
 }
-.card_top_area span{
+
+.card_top_area span {
     font-family: Lato;
-font-weight: 600;
-font-style: SemiBold;
-font-size: 16.26px;
-line-height: 16.26px;
-letter-spacing: 0%;
-text-align: center;
-text-transform: capitalize;
-color: #000000;
-padding: 8px 14px;
-background: #F2F2F7;
-border-radius: 4px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16.26px;
+    line-height: 16.26px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 8px 14px;
+    background: #F2F2F7;
+    border-radius: 4px;
 }
-.product_card_img{
+
+.product_card_img {
     width: 100%;
     aspect-ratio: 393/343;
 }
+
+.product_card_content {}
+
+.product_card_content h1 {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: Gray;
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+.product_card_content h1 span {
+    color: #8E8E93;
+}
+
+.product_card_content h2 {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #404040;
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+.product_card_content h3 {
+    font-family: Lato;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #404040;
+    text-align: left;
+}
+.pricing_area{
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #F2F2F7;
+}
+.pricing_area del {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-decoration: line-through;
+    color: #FF383C;
+}
+
+.pricing_area h4 {
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.pricing_area p {
+    font-family: Lato;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #8E8E93;
+}
+
 @media (max-width: 992px) {
-    .h-card .card-body h1{
+    .h-card .card-body h1 {
         font-size: 13px;
     }
-    .shopBycollection_area .v-border{
+
+    .shopBycollection_area .v-border {
         height: 2px;
     }
-    .newarrivals_area .v-border{
+
+    .newarrivals_area .v-border {
         height: 2px;
     }
 }
+
 @media (max-width: 768px) {
     .h-card .card-body img {
-  height: 30px;
-  width: 30px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .h-card .card-body {
+        padding: .5rem .5rem;
+    }
+
+    .h-card .card-body h1 {
+        font-size: 10px;
+    }
+
+    .hero_item {
+        aspect-ratio: unset;
+        width: 45%;
+    }
 }
-.h-card .card-body {
-  padding: .5rem .5rem;
-}
-  .h-card .card-body h1 {
-    font-size: 10px;
-  }
-  .hero_item{
-    aspect-ratio: unset;
-    width: 45%;
-}
-}
-@media (max-width: 576px){
-.shopBycollection_area h1{
-    font-size: 20px;
-}
+
+@media (max-width: 576px) {
+    .shopBycollection_area h1 {
+        font-size: 20px;
+    }
 }
 
 /* ============================================= */
