@@ -442,11 +442,110 @@ img {
 /* ============================================= */
 /* ===============Home page start=============== */
 /* ============================================= */
+.hero_item{
+    aspect-ratio: 196/133;
+    width: 196px;
+}
+.h-card{
+    background: #F2F2F7;
+    border: 1px solid #8E8E93;
+    border-radius: 7px;
+}
+.h-card .card-body img{
+    height: 47px;
+    width: 47px;
+}
+.h-card .card-body h1{
+    font-family: Lato;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 8%;
+text-align: center;
+text-transform: uppercase;
+color: #8E8E93;
+}
+.c-card{
+    width: 100%;
+    aspect-ratio: 304/184;
+    border-radius: 69px;
+    overflow: hidden;
+    display: block;
+    transition: all 0.3s ease;
+}
+.c-card-inner{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.c-card-inner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.c-card-inner::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000080;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    content: '';
+}
+.c-card-inner h1{
+    font-family: Lato;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 28px;
+line-height: 22px;
+letter-spacing: 0px;
+vertical-align: middle;
+text-transform: uppercase;
+text-align: center;
+width: 100%;
+color: #ffffff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+z-index: 2;
+}
+.c-card:hover img{
+    transform: scale(1.02);
+}
 
+/* shop by collection area start */
+/* shop by collection area end */
 
-
-
-
+@media (max-width: 992px) {
+    .h-card .card-body h1{
+        font-size: 13px;
+    }
+}
+@media (max-width: 768px) {
+    .h-card .card-body img {
+  height: 30px;
+  width: 30px;
+}
+.h-card .card-body {
+  padding: .5rem .5rem;
+}
+  .h-card .card-body h1 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px){
+    .hero_item{
+    aspect-ratio: unset;
+    width: 45%;
+}
+}
 
 /* ============================================= */
 /* ===============Home page end================= */
