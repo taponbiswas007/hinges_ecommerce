@@ -635,11 +635,65 @@ padding-bottom: 20px;
 }
 /* shop by collection area end */
 
+/* new arrivals */
+.newarrivals_area h1{
+    font-family: Forum;
+font-weight: 400;
+font-style: Regular;
+font-size: 36px;
+text-align: center;
+line-height: 45px;
+letter-spacing: -1px;
+color: #000000;
+margin-bottom: 0;
+flex-shrink: 0;
+}
+.newarrivals_area .v-border{
+    height: 1px;
+    width: 100%;
+    background: #AEAEB2;
+}
+.product_card{
+    box-shadow: 0px 1px 12px 0px #00000014;
+    background: #FFFFFF;
+    padding: 19px;
+    padding-bottom: 31px;
+}
+.card_top_area h2{
+    font-family: Lato;
+font-weight: 400;
+font-style: Regular;
+font-size: 24px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+.card_top_area span{
+    font-family: Lato;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 16.26px;
+line-height: 16.26px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+color: #000000;
+padding: 8px 14px;
+background: #F2F2F7;
+border-radius: 4px;
+}
+.product_card_img{
+    width: 100%;
+    aspect-ratio: 393/343;
+}
 @media (max-width: 992px) {
     .h-card .card-body h1{
         font-size: 13px;
     }
     .shopBycollection_area .v-border{
+        height: 2px;
+    }
+    .newarrivals_area .v-border{
         height: 2px;
     }
 }
