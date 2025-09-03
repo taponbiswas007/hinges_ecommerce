@@ -366,8 +366,8 @@ img {
     font-family: Inter;
     font-weight: 700;
     font-style: Bold;
-    font-size: 11.45px;
-    line-height: 12.38px;
+    font-size: 8.45px;
+    line-height: 9.38px;
     letter-spacing: 0px;
     text-align: center;
     color: #ffffff;
@@ -445,14 +445,27 @@ img {
 /* ===============Home page start=============== */
 /* ============================================= */
 .hero_item {
-    aspect-ratio: 196/133;
-    width: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h-card {
     background: #F2F2F7;
     border: 1px solid #8E8E93;
     border-radius: 7px;
+    aspect-ratio: 196/133;
+    width: 196px;
+    transition: all 0.3s ease;
+}
+
+.h-card:hover {
+    background: #9cb31a60;
+}
+
+.h-card .card-body {
+    height: 100%;
+    width: 100%;
 }
 
 .h-card .card-body img {
@@ -501,7 +514,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background: #000000b5;
+    background: #00000091;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -552,10 +565,11 @@ img {
 }
 
 .shop_by_card {
-   box-shadow: 0px 0px 15px 0px #00000014;
+    box-shadow: 0px 0px 15px 0px #00000014;
     background: #FFFFFF;
     overflow: hidden;
     transition: all 0.3s ease;
+    display: block;
 }
 
 .shop_by_card:hover img {
@@ -571,7 +585,7 @@ img {
 .mshopcard_img {
     width: 100%;
     aspect-ratio: 415/492;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .mshopcard_img img {
@@ -590,7 +604,7 @@ img {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #000000ba;
+    background: #00000091;
     z-index: 1;
 }
 
@@ -690,6 +704,7 @@ img {
     font-weight: 400;
     font-style: Regular;
     font-size: 24px;
+    line-height: 33px;
     letter-spacing: 0%;
     vertical-align: middle;
 
@@ -715,7 +730,6 @@ img {
     aspect-ratio: 393/343;
 }
 
-.product_card_content {}
 
 .product_card_content h1 {
     font-family: Lato;
@@ -757,11 +771,13 @@ img {
     color: #404040;
     text-align: left;
 }
-.pricing_area{
+
+.pricing_area {
     margin-top: 16px;
     padding-top: 16px;
     border-top: 1px solid #F2F2F7;
 }
+
 .pricing_area del {
     font-family: Lato;
     font-weight: 400;
@@ -796,9 +812,114 @@ img {
     color: #8E8E93;
 }
 
+.card_button_area button {
+    font-family: Lato;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 8%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #404040;
+    border: 1px solid #8E8E93;
+    background: #F2F2F7;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.card_button_area button:hover {
+    background: #9CB31A;
+    color: #ffffff;
+}
+
+.card_button_area .favorite {
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.card_button_area button img {
+    height: 24px;
+    width: 24px;
+}
+
+footer {
+    padding: 15px 10px 33px 10px;
+    border-top: 0.5px solid #C7C7CC;
+}
+
+footer .logo {
+    width: 104px;
+    height: 69px;
+    display: block;
+}
+
+footer p {
+    font-family: Noto Serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #2D1817;
+    padding-top: 10px;
+}
+
+@media (max-width: 1400px) {
+    .card_button_area button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card_button_area button {
+        font-size: 12px;
+        padding: 0 5px;
+        height: 40px;
+    }
+
+    .card_button_area .favorite {
+        width: 40px;
+    }
+
+    .product_card_content h1 {
+        font-size: 19px;
+    }
+
+    .pricing_area del {
+        font-size: 18px;
+    }
+
+    .pricing_area h4 {
+        font-size: 18px;
+    }
+
+    .pricing_area p {
+        font-size: 16px;
+    }
+
+    .product_card_content h3 {
+        font-size: 18px;
+    }
+
+    .product_card_content h2 {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 992px) {
+    .h-card {
+        width: 148px;
+    }
+
     .h-card .card-body h1 {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .shopBycollection_area .v-border {
@@ -821,18 +942,63 @@ img {
     }
 
     .h-card .card-body h1 {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .hero_item {
-        aspect-ratio: unset;
         width: 45%;
+    }
+
+    .h-card {
+        aspect-ratio: unset;
+        width: 100%;
+    }
+
+    .product_card_content h1 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .product_card_content h2 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .product_card_content h3 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .pricing_area del {
+        font-size: 15px;
+    }
+
+    .pricing_area h4 {
+        font-size: 15px;
+    }
+
+    .pricing_area p {
+        font-size: 13px;
+    }
+
+    .card_top_area h2 {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 576px) {
     .shopBycollection_area h1 {
         font-size: 20px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 346px) {
+    .card_button_area button {
+        font-size: 11px;
     }
 }
 
