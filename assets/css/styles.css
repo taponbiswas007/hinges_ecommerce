@@ -163,7 +163,7 @@ img {
 .header_area {
     background: #9CB31A14;
     border-bottom: 1px solid #E5E5EA;
-    padding: 6px 0;
+    padding-top: 6px;
 }
 
 .headerSticky {
@@ -389,6 +389,7 @@ img {
     vertical-align: middle;
     color: #2D1817;
     text-transform: uppercase;
+    padding-bottom: 15px;
 }
 
 .bottomLinklist a img {
@@ -408,7 +409,7 @@ img {
 }
 
 .sublinkList_area {
-    width: 220px;
+    width: 100%;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -416,6 +417,9 @@ img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 8px 0;
+    top: 97px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .bottombarLink:hover .sublinkList_area {
