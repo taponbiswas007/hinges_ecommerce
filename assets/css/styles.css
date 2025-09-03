@@ -447,6 +447,16 @@ img {
     border-radius: 4px;
 }
 
+.sublinklist_area_inner h1 {
+    font-family: Forum;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
 @media (max-width: 1200px) {
     .topbarlink_list a {
         font-size: 13px;
