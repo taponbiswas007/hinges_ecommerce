@@ -69,9 +69,16 @@
                         </div>
                         <div class="d-flex justify-content-end align-items-center gap-4">
                             <div class="user_auth_items">
-                                <button class="searchBtn">
-                                    <img src="assets/images/search_icon.svg" alt="Search">
-                                </button>
+
+                                <div class="dropdown">
+                                    <button class="searchBtn authcartLink" type="button" id="searchBtn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/search_icon.svg" alt="Search">
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="searchBtn" style="min-width: 250px;">
+                                        <input type="search" class="form-control rounded-3">
+                                    </ul>
+                                </div>
                                 <a href="#" class="position-relative authcartLink">
                                     <img src="assets/images/shopping-bag.svg" alt="Cart">
                                     <span
@@ -92,7 +99,7 @@
                                         <span></span>
                                         <span></span>
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="extramenuitems">
+                                    <div class="dropdown-menu dropdown-menu-end overflow-y-auto" aria-labelledby="extramenuitems">
                                         <div class="d-flex gap-3 flex-md-row flex-column">
                                             <div class="d-lg-none d-block mainMenu">
                                                 <ul>
@@ -128,6 +135,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
+                                            <div class="d-lg-none d-block responsivemenuDivider"></div>
                                             <div class="d-lg-none d-block categorymenu">
                                                 <div class="bottomLinklist flex-column align-items-start gap-2">
                                                     <div class="position-relative bottombarLink w-100">

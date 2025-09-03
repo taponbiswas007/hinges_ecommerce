@@ -50,4 +50,14 @@ $(document).ready(function () {
         $('.user_auth_items .dropdown-menu').removeClass('active');
     });
 });
-
+// header sticky
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop()>100){
+            $('.header_area').addClass('headerSticky')
+        }
+        else{
+             $('.header_area').removeClass('headerSticky')
+        }
+    });
+});
