@@ -161,7 +161,7 @@ img {
 }
 
 .header_area {
-    background: #9CB31A14;
+    background: #F2F2F7;
     border-bottom: 1px solid #E5E5EA;
     padding-top: 6px;
 }
@@ -425,11 +425,18 @@ img {
 .bottombarLink:hover .sublinkList_area {
     display: block;
 }
-
+.sublinklist_area_inner{
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+}
+.sublinklist_area_inner .submemulistitem:nth-child(even){
+background: #8e8e934d;
+}
 .sublinklist_area_inner ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    border-bottom: 2px solid #8E8E93;
 }
 
 .sublinklist_area_inner ul li a {
@@ -449,12 +456,20 @@ img {
 
 .sublinklist_area_inner h1 {
     font-family: Forum;
-    font-weight: 400;
+    font-weight: 700;
     font-style: Regular;
     font-size: 20px;
     line-height: 45px;
     letter-spacing: 2px;
-    color: #000000;
+    color: #2D1817;
+}
+.sublinklist_area_inner ul li a{
+    padding:0;
+    background: none;
+    margin-bottom: 8px;
+}
+.sublinklist_area_inner ul li a:hover{
+    background: none;
 }
 
 @media (max-width: 1200px) {
