@@ -170,7 +170,7 @@ img {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1050;
+    z-index: 1030;
     background: #ffffff;
     animation: hsticky 0.3s ease-in;
 
@@ -1239,6 +1239,251 @@ footer p {
 
 /* ============================================= */
 /* ===============Home page end================= */
+/* ============================================= */
+
+
+/* ============================================= */
+/* ===============shop by category page start=============== */
+/* ============================================= */
+
+/* slider area start*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigationBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationBtn img {
+    width: 23px;
+}
+
+.navigationprev {
+    left: 15px;
+}
+
+.navigationnext {
+    right: 15px;
+}
+
+.swiper-slide .shop_by_card {
+    box-shadow: 0px 0px 15px 0px #0000000D;
+    width: 100%;
+}
+
+.swiper-slide .shop_by_card:hover {
+    border: 1px solid #2D1817;
+}
+
+/* slider area end*/
+
+.megafilterBtn {
+    background: #F2F2F7;
+    color: #000000;
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16.56px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.megafilterBtn img {
+    flex-shrink: 0;
+    width: 23px;
+}
+
+.megafilterBtn:hover {
+    background: #ededed;
+}
+
+.filterOffcanvasArea .offcanvas-body {
+    padding: 20px 40px;
+}
+
+.filterheading {
+    margin-bottom: 32px;
+}
+
+.filterheading h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #222222;
+}
+
+.filterheading button {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    vertical-align: bottom;
+    color: #9CB31A;
+}
+
+.filterCategoryBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.5px solid #E5E5EA;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.filterCategoryBtn span {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #222222;
+}
+
+.filterCategoryBtn .filterBtnIcon {
+    transition: all 0.3s ease;
+}
+
+.filterCategoryBtn .filterBtnIcon.active {
+    transform: rotateZ(-90deg);
+    transition: all 0.3s ease;
+}
+
+.filterCard {
+    padding-bottom: 25px;
+}
+
+.filterCard ul li label {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #222222;
+}
+
+.filterCard ul li input {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #222222;
+}
+
+.filterCard ul li p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #AEAEB2;
+}
+
+/* custom checkbox start */
+.customCheckboxWrapper {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+/* Hide the native checkbox */
+.customCheckboxWrapper input.customCheckbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+/* The visible custom box */
+.customCheckboxWrapper .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D0D5DD;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+/* Show checkmark when checked */
+.customCheckboxWrapper input.customCheckbox:checked+.checkmark {
+    background-color: #2D1817;
+    border-color: #2D1817;
+}
+
+/* Create the white checkmark */
+.customCheckboxWrapper input.customCheckbox:checked+.checkmark::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* custom checkbox end */
+
+@media (max-width: 576px) {
+    .filterOffcanvasArea .offcanvas-body {
+        padding: 20px;
+    }
+}
+
+/* ============================================= */
+/* ===============shop by category page end================= */
 /* ============================================= */
 
 

@@ -61,3 +61,76 @@ $(document).ready(function () {
     });
 });
 
+// shop by category slider start
+var swiper = new Swiper(".shopByCategorySlider", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".categorynextnavigate",
+        prevEl: ".categoryprevnavigate",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+    },
+    on: {
+        init: function () {
+            updateNavButtons(this);
+        },
+        slideChange: function () {
+            updateNavButtons(this);
+        },
+        resize: function () {
+            updateNavButtons(this);
+        }
+    }
+});
+
+function updateNavButtons(swiper) {
+    const prevBtn = document.querySelector(".categoryprevnavigate");
+    const nextBtn = document.querySelector(".categorynextnavigate");
+
+    if (swiper.isBeginning) {
+        prevBtn.style.opacity = "0.5";
+        prevBtn.style.pointerEvents = "none"; // Optional: disable click
+    } else {
+        prevBtn.style.opacity = "1";
+        prevBtn.style.pointerEvents = "auto";
+    }
+
+    if (swiper.isEnd) {
+        nextBtn.style.opacity = "0.5";
+        nextBtn.style.pointerEvents = "none"; // Optional: disable click
+    } else {
+        nextBtn.style.opacity = "1";
+        nextBtn.style.pointerEvents = "auto";
+    }
+}
+
+
+// shop by category slider end
+
+$(document).ready(function(){
+    $('.filterCategoryBtn').click(function(){
+        $(this).find('.filterBtnIcon').toggleClass('active');
+    });
+});
+
+$(document).ready(function(){
+    $('.resetAll').click(function(){
+        // Uncheck all custom checkboxes inside the offcanvas body
+        $('.offcanvas-body input[type="checkbox"]').prop('checked', false).trigger('change');
+         // Clear all text inputs (From / To fields)
+        $('.offcanvas-body input[type="text"]').val('');
+    });
+});
