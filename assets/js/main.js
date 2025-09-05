@@ -51,13 +51,13 @@ $(document).ready(function () {
     });
 });
 // header sticky
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if($(this).scrollTop()>100){
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
             $('.header_area').addClass('headerSticky')
-        }
-        else{
-             $('.header_area').removeClass('headerSticky')
+        } else {
+            $('.header_area').removeClass('headerSticky')
         }
     });
 });
+

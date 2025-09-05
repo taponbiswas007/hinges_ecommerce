@@ -422,6 +422,18 @@ img {
     transform: translateX(-50%);
 }
 
+.otherSubmenu {
+    min-width: 250px;
+    top: 100%;
+    padding: 10px 15px;
+}
+
+.bottomLinklist>.bottombarLink:last-child .otherSubmenu {
+    left: unset !important;
+    transform: unset !important;
+    right: 0 !important;
+}
+
 .bottombarLink:hover .sublinkList_area {
     display: block;
 }
@@ -503,6 +515,59 @@ background: #8e8e934d;
     .logo {
         width: 87px;
     }
+
+    .bottomLinklist .accordion-toggle {
+        font-family: Lato;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        color: #2D1817;
+        text-transform: uppercase;
+        padding: 12px 22px;
+        text-wrap: nowrap;
+    }
+
+    .bottomLinklist .accordion-toggle img {
+        width: 9px;
+    }
+
+    .accordion-content {
+        display: none;
+        padding: 12px 22px;
+        border-top: 1px solid #8E8E93;
+    }
+
+    .accordion-content a {
+        text-align: left !important;
+        display: block !important;
+    }
+
+    .accordion-content h1 {
+        font-family: Forum;
+        font-weight: 600;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 45px;
+        letter-spacing: 2px;
+        color: #2D1817;
+    }
+
+    .accordion-toggle {
+        cursor: pointer;
+        padding: 0.5rem 0;
+    }
+
+    .accordion-item.active .accordion-content {
+        display: block;
+    }
+
+    .accordion-item:not(:first-of-type) {
+        border-top: 1px solid rgba(0, 0, 0, .125) !important;
+    }
+
 }
 
 @media (max-width: 376px) {
@@ -1003,7 +1068,8 @@ footer p {
     .newarrivals_area .v-border {
         height: 2px;
     }
-    .sublinkList_area{
+
+    .sublinkList_area {
         left: 0 !important;
         right: 0 !important;
         transform: unset !important;
