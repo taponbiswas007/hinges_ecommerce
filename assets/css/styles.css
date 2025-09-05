@@ -196,8 +196,9 @@ img {
 }
 
 .responsivemenuDivider {
-    height: 5px;
-    background: #9CB31A;
+    height: 2px;
+    background: #404040;
+    width: 100%;
 }
 
 .topbarlink_list a {
