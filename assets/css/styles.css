@@ -1165,21 +1165,26 @@ footer p {
     .searchDropdown {
         width: 100vw;
     }
-     .h-card .card-body h1 {
+
+    .h-card .card-body h1 {
         font-size: 12px;
     }
-      .product_card_content h1{
+
+    .product_card_content h1 {
         font-size: 15px;
-      }
-      .c-card-inner h1{
+    }
+
+    .c-card-inner h1 {
         font-size: 20px;
-      }
+    }
 }
+
 @media (max-width: 440px) {
-  .c-card-inner h1 {
-    font-size: 15px;
-  }
+    .c-card-inner h1 {
+        font-size: 15px;
+    }
 }
+
 @media (max-width: 346px) {
     .card_button_area button {
         font-size: 11px;
@@ -1187,24 +1192,47 @@ footer p {
 }
 
 @media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 980px;
-  }
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 980px;
+    }
 }
+
 @media (min-width: 1100px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1080px;
-  }
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1080px;
+    }
 }
+
 @media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1280px;
-  }
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1280px;
+    }
 }
+
 @media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1380px;
-  }
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1380px;
+    }
 }
 
 
