@@ -298,6 +298,14 @@ img {
     color: #191C1F;
 }
 
+.menudropdown .dropdown-item:hover {
+    background: #F2F2F7;
+}
+
+.menudropdown .dropdown-item:focus {
+    background: #F2F2F7;
+}
+
 .menutogglebtn {
     width: 30px;
     height: 30px;
@@ -398,14 +406,16 @@ img {
 
 .user_auth_items .badge {
     font-family: Inter;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 8.45px;
-    line-height: 9.38px;
+    font-weight: 500;
+    font-size: 10.45px;
+    line-height: 10.45px;
     letter-spacing: 0px;
     text-align: center;
     color: #ffffff;
     background: #FF3B30;
+    padding: 3px !important;
+    min-width: 16px;
+    width: fit-content;
 }
 
 .sublinkList_area {
@@ -599,7 +609,7 @@ background: #8e8e934d;
 }
 
 .h-card:hover {
-    background: #9cb31a60;
+    background: #ededed;
 }
 
 .h-card .card-body {
@@ -662,8 +672,7 @@ background: #8e8e934d;
 
 .c-card-inner h1 {
     font-family: Lato;
-    font-weight: 600;
-    font-style: SemiBold;
+    font-weight: 500;
     font-size: 28px;
     line-height: 22px;
     letter-spacing: 0px;
@@ -709,6 +718,7 @@ background: #8e8e934d;
     overflow: hidden;
     transition: all 0.3s ease;
     display: block;
+    height: 100%;
 }
 
 .shop_by_card:hover img {
@@ -724,16 +734,24 @@ background: #8e8e934d;
 .mshopcard_img {
     width: 100%;
     aspect-ratio: 415/492;
+    height: 100%;
+    position: relative;
     /* overflow: hidden; */
 }
 
 .mshopcard_img img {
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .mshop_card_inner {
     position: relative;
+    height: 100%;
 }
 
 .mshop_card_inner::after {
@@ -878,7 +896,7 @@ background: #8e8e934d;
     line-height: 24px;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: Gray;
+    color: #404040;
     text-align: left;
     margin-bottom: 7px;
 }
@@ -973,8 +991,7 @@ background: #8e8e934d;
 }
 
 .card_button_area button:hover {
-    background: #9CB31A;
-    color: #ffffff;
+    background: #ededed;
 }
 
 .card_button_area .favorite {
@@ -1088,7 +1105,7 @@ footer p {
     }
 
     .h-card .card-body h1 {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .hero_item {
@@ -1132,21 +1149,64 @@ footer p {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .shopBycollection_area h1 {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    .newarrivals_area h1 {
+        font-size: 30px;
     }
 
     footer p {
         font-size: 11px;
     }
-}
 
+    .searchDropdown {
+        width: 100vw;
+    }
+     .h-card .card-body h1 {
+        font-size: 12px;
+    }
+      .product_card_content h1{
+        font-size: 15px;
+      }
+      .c-card-inner h1{
+        font-size: 20px;
+      }
+}
+@media (max-width: 440px) {
+  .c-card-inner h1 {
+    font-size: 15px;
+  }
+}
 @media (max-width: 346px) {
     .card_button_area button {
         font-size: 11px;
     }
 }
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 980px;
+  }
+}
+@media (min-width: 1100px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1080px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1380px;
+  }
+}
+
 
 /* ============================================= */
 /* ===============Home page end================= */
