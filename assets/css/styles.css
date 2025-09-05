@@ -1476,6 +1476,29 @@ footer p {
 
 /* custom checkbox end */
 
+.sortBy_area p {
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #8E8E93;
+    text-wrap: nowrap;
+}
+
+.sortBy_area select {
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #121212;
+    border: 1px solid #D1D1D6 !important;
+    text-transform: capitalize;
+}
+
 @media (max-width: 576px) {
     .filterOffcanvasArea .offcanvas-body {
         padding: 20px;
