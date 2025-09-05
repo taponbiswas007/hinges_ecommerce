@@ -1003,6 +1003,12 @@ footer p {
     .newarrivals_area .v-border {
         height: 2px;
     }
+    .sublinkList_area{
+        left: 0 !important;
+        right: 0 !important;
+        transform: unset !important;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 768px) {
