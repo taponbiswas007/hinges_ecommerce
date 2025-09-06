@@ -930,6 +930,20 @@ background: #8e8e934d;
     text-align: left;
 }
 
+.product_card_content h5 {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27.2px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #404040;
+}
+
+.product_card_content h5 {
+    font-weight: 400;
+}
+
 .pricing_area {
     margin-top: 16px;
     padding-top: 16px;
@@ -1497,6 +1511,21 @@ footer p {
     color: #121212;
     border: 1px solid #D1D1D6 !important;
     text-transform: capitalize;
+}
+
+.newlabel {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 16.26px;
+    line-height: 16.26px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #1570EF;
+    background: #1570EF26;
+    padding: 8px 14px;
+    border-radius: 4px;
+    top: 10px;
 }
 
 @media (max-width: 576px) {
