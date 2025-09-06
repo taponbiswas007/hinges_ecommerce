@@ -1214,6 +1214,10 @@ footer p {
     .c-card-inner h1 {
         font-size: 20px;
     }
+
+    .mshopcard_img {
+        aspect-ratio: 415/492;
+    }
 }
 
 @media (max-width: 440px) {
