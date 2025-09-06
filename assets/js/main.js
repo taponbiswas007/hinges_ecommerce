@@ -126,11 +126,20 @@ $(document).ready(function(){
     });
 });
 
+// $(document).ready(function(){
+//     $('.resetAll').click(function(){
+//         // Uncheck all custom checkboxes inside the offcanvas body
+//         $('.offcanvas-body input[type="checkbox"]').prop('checked', false).trigger('change');
+//          // Clear all text inputs (From / To fields)
+//         $('.offcanvas-body input[type="text"]').val('');
+//     });
+// });
 $(document).ready(function(){
-    $('.resetAll').click(function(){
-        // Uncheck all custom checkboxes inside the offcanvas body
+    $('.resetAll').on('click touchstart', function(e){
+        e.preventDefault(); // prevent any default action on mobile
+        console.log('Reset triggered');
         $('.offcanvas-body input[type="checkbox"]').prop('checked', false).trigger('change');
-         // Clear all text inputs (From / To fields)
         $('.offcanvas-body input[type="text"]').val('');
     });
 });
+
