@@ -734,7 +734,6 @@ background: #8e8e934d;
 
 .mshopcard_img {
     width: 100%;
-    aspect-ratio: 415/492;
     height: 100%;
     position: relative;
     /* overflow: hidden; */
@@ -845,6 +844,25 @@ background: #8e8e934d;
 }
 
 .newarrivals_area .v-border {
+    height: 1px;
+    width: 100%;
+    background: #AEAEB2;
+}
+
+.sectionmain_title h1 {
+    font-family: Forum;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 36px;
+    text-align: center;
+    line-height: 45px;
+    letter-spacing: -1px;
+    color: #000000;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.sectionmain_title .v-border {
     height: 1px;
     width: 100%;
     background: #AEAEB2;
@@ -1170,6 +1188,10 @@ footer p {
     }
 
     .newarrivals_area h1 {
+        font-size: 30px;
+    }
+
+    .sectionmain_title h1 {
         font-size: 30px;
     }
 
