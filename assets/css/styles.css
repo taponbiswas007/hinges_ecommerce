@@ -1400,6 +1400,11 @@ footer p {
     letter-spacing: 0px;
     vertical-align: bottom;
     color: #9CB31A;
+    transition: all 0.3s ease;
+}
+
+.filterheading button:hover {
+    color: #3d4801;
 }
 
 .filterCategoryBtn {
