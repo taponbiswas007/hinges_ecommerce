@@ -75,13 +75,36 @@ $(document).ready(function(){
         $('.offcanvas-body input[type="text"]').val('');
     });
 });
-
 $(document).ready(function(){
     $('.productinformation_tab_area ul li button').click(function(){
+        // active class switch
         $('.productinformation_tab_area ul li button').removeClass('active');
         $(this).addClass('active');
+
+        // এখন active tab চেক করো এবং section show/hide করো
+        if ($('.productInfo').hasClass('active')) {
+            $('.productInformationtable').css({'display':'block'});
+            $('.product_description_area').css({'display':'none'});
+        }
+
+        if ($('.productDes').hasClass('active')) {
+            $('.product_description_area').css({'display':'block'});
+            $('.productInformationtable').css({'display':'none'});
+        }
     });
+
+    // পেজ লোড হওয়ার সময়ও একবার চেক করো (যদি active ডিফল্ট থাকে)
+    if ($('.productInfo').hasClass('active')) {
+        $('.productInformationtable').show();
+        $('.product_description_area').hide();
+    }
+
+    if ($('.productDes').hasClass('active')) {
+        $('.product_description_area').show();
+        $('.productInformationtable').hide();
+    }
 });
+
 
 $(document).ready(function(){
     $('.color_btn').click(function(){
@@ -89,6 +112,35 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 });
+
+// quantity set area
+$(document).ready(function(){
+    $('.increaseQty').click(function(){
+        var currentVal = parseInt($('.quantityInput').text()); // text() ব্যবহার করো
+        $('.quantityInput').text(currentVal + 1);
+    });
+
+    $('.decreaseQty').click(function(){
+        var currentVal = parseInt($('.quantityInput').text());
+        if (currentVal > 1) {
+            $('.quantityInput').text(currentVal - 1);
+        }
+    });
+});
+$(document).ready(function(){
+    $('.relatedincreaseQty').click(function(){
+        var currentVal = parseInt($('.relatedquantityInput').text()); // text() ব্যবহার করো
+        $('.relatedquantityInput').text(currentVal + 1);
+    });
+
+    $('.relateddecreaseQty').click(function(){
+        var currentVal = parseInt($('.relatedquantityInput').text());
+        if (currentVal > 1) {
+            $('.relatedquantityInput').text(currentVal - 1);
+        }
+    });
+});
+
 
 // shop by category slider start
 var swiper = new Swiper(".shopByCategorySlider", {

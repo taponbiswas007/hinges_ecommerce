@@ -522,10 +522,10 @@
                     <div class="productinformation_tab_area">
                         <ul>
                             <li>
-                                <button class="active">Product Information</button>
+                                <button class="active productInfo">Product Information</button>
                             </li>
                             <li>
-                                <button>Description</button>
+                                <button class="productDes">Description</button>
                             </li>
                             <li>
                                 <button>Other Tab</button>
@@ -534,74 +534,194 @@
                     </div>
                     <!-- ========product information area start====== -->
                     <div class="product_information">
-                        <table class="prductInformationtable">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="d-flex justify-content-start">
-                                            <div>
-                                                <h3>Dimensions</h3>
-                                                <p>64W X 87D X 66H</p>
+                        <div class="productInformationtable">
+                            <table class="w-100">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex justify-content-start">
+                                                <div>
+                                                    <h3>Dimensions</h3>
+                                                    <p>64W X 87D X 66H</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-center">
-                                            <div>
-                                                <h3>Wood Type</h3>
-                                                <p>Sheesham Wood</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <h3>Wood Type</h3>
+                                                    <p>Sheesham Wood</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-end w-100">
-                                            <div>
-                                                <h3>Finish</h3>
-                                                <p>Bison Brown</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end w-100">
+                                                <div>
+                                                    <h3>Finish</h3>
+                                                    <p>Bison Brown</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="d-flex justify-content-start">
-                                            <div>
-                                                <h3>Quantity available</h3>
-                                                <p>4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex justify-content-start">
+                                                <div>
+                                                    <h3>Quantity available</h3>
+                                                    <p>4</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-center">
-                                            <div>
-                                                <h3>Cubic feet</h3>
-                                                <p>26.21</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <h3>Cubic feet</h3>
+                                                    <p>26.21</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-flex justify-content-end w-100">
-                                            <div>
-                                                <h3>ETA</h3>
-                                                <p>Sep-22</p>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex justify-content-end w-100">
+                                                <div>
+                                                    <h3>ETA</h3>
+                                                    <p>Sep-22</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- =========product description area start========= -->
+                        <div class="product_description_area">
+                            <p>
+                                Buy one or buy a few and make every space where you sit more convenient. Light and easy
+                                to move around with removable tray top, handy for serving snacks.
+                            </p>
+                        </div>
+                        <!-- =========product description area end========= -->
                         <!-- color size and quantity area start -->
-                         <div class="d-flex justify-content-between align-items-center gap-3">
+                        <div class="d-flex justify-content-between align-items-center gap-3">
                             <div class="d-flex color_area justify-content-start align-items-center gap-2">
                                 <button class="color_btn antiqueRobe active"></button>
                                 <button class="color_btn cafeauLait"></button>
                                 <button class="color_btn deeptuscanRed"></button>
                                 <button class="color_btn antiquerobelight"></button>
                             </div>
-                         </div>
+                            <select name="" id="" class="form-select size_select">
+                                <option>Size</option>
+                                <option>Queen</option>
+                                <option>King</option>
+                                <option>Double</option>
+                            </select>
+                            <div class="quantity_set">
+                                <button class="decreaseQty">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span class="quantityInput">1</span>
+                                <button class="increaseQty">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
                         <!-- color size and quantity area end -->
+                        <div class="pricing_area d-flex justify-content-start align-items-center gap-2">
+                            <del>$1075.00 </del>
+                            <h4>$537.00</h4>
+                            <p> 50% Off</p>
+                        </div>
+                        <div
+                            class="card_button_area cart_button_area d-flex justify-content-between align-items-center flex-nowrap gap-2 pt-3">
+                            <button class="d-flex justify-content-center align-items-center gap-3">
+                                <span>
+                                    <img src="assets/images/wfav.svg" alt="">
+                                </span>
+                                my list
+                            </button>
+                            <button class="d-flex justify-content-center align-items-center gap-3">
+                                <span>
+                                    <img src="assets/images/wcart.svg" alt="">
+                                </span>
+                                Add to cart
+                            </button>
+                        </div>
                     </div>
                     <!-- ========product information area end====== -->
+
+                    <!-- related product area start -->
+                    <div class="related_product_area">
+                        <h1 class="mb-4">Related Product</h1>
+                        <div class="retated_product_list">
+                            <div class="related_product_item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="w-50 pe-2">
+                                        <div
+                                            class="d-flex related_product_img justify-content-start align-items-center gap-4">
+                                            <img src="assets/images/wareDrop.webp" alt="">
+                                            <button class="quickviewBtn">
+                                                Quick View <i class="fa-solid fa-circle-arrow-right ms-3"></i>
+                                            </button>
+                                        </div>
+                                        <h2>Riviera E. Live Edge 6 Dr. Dresser</h2>
+                                        <div class="d-flex pt-3 justify-content-between align-items-center">
+                                            <p class="price">
+                                                $1075.00
+                                            </p>
+                                            <div
+                                                class="d-flex color_area justify-content-start align-items-center gap-2">
+                                                <button class="color_btn antiqueRobe active"></button>
+                                                <button class="color_btn cafeauLait"></button>
+                                                <button class="color_btn deeptuscanRed"></button>
+                                                <button class="color_btn antiquerobelight"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-50 ps-2">
+                                        <div class="d-flex justify-content-between align-items-center gap-2">
+                                            <div class="w-50">
+                                                <label for="">Size</label>
+                                                <select name="" id="" class="form-select size_select">
+                                                    <option>Size</option>
+                                                    <option>Queen</option>
+                                                    <option>King</option>
+                                                    <option>Double</option>
+                                                </select>
+                                            </div>
+                                            <div class="w-50">
+                                                <label for="">Quantity</label>
+                                                <div class="relatedquantity_set">
+                                                    <button class="relateddecreaseQty">
+                                                        <i class="fa-solid fa-minus"></i>
+                                                    </button>
+                                                    <span class="relatedquantityInput">00</span>
+                                                    <button class="relatedincreaseQty">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div
+                            class="card_button_area cart_button_area d-flex justify-content-between align-items-center flex-nowrap gap-2 pt-3">
+                            <button class="d-flex justify-content-center align-items-center gap-3">
+                                <span>
+                                    <img src="assets/images/wfav.svg" alt="">
+                                </span>
+                                my list
+                            </button>
+                            <button class="d-flex justify-content-center align-items-center gap-3">
+                                <span>
+                                    <img src="assets/images/wcart.svg" alt="">
+                                </span>
+                                Add to cart
+                            </button>
+                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- related product area end -->
                 </div>
                 <!-- product details content area end -->
             </div>
