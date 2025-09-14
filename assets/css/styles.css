@@ -1921,89 +1921,199 @@ footer p {
     vertical-align: middle;
     color: #404040;
 }
-.productInformationtable{
+
+.productInformationtable {
     display: none;
 }
-.product_description_area{
+
+.product_description_area {
     display: none;
 }
-.related_product_area{
+
+.related_product_area {
     margin-top: 30px;
 }
-.related_product_area h1{
+
+.related_product_area h1 {
     font-family: Lato;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-line-height: 20px;
-letter-spacing: 0%;
-vertical-align: middle;
-color: #191C1F;
-padding-bottom: 8px;
-display: inline-block;
-border-bottom: 1.5px solid #000000;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #191C1F;
+    padding-bottom: 8px;
+    display: inline-block;
+    border-bottom: 1.5px solid #000000;
 }
-.related_product_item{
+
+.related_product_item {
     box-shadow: 0px 0px 12.64px 0px #00000014;
     background: #FFFFFF;
     padding: 10px;
     border-radius: 10px;
 }
-.related_product_img img{
+
+.related_product_img img {
     max-width: 50px;
     aspect-ratio: 50/43;
 }
-.related_product_img .quickviewBtn{
-font-family: Lato;
-font-weight: 600;
-font-size: 12px;
-line-height: 18px;
-letter-spacing: 8%;
-text-align: center;
-text-transform: uppercase;
-color: #3A3845;
-}
-.related_product_item h2{
+
+.related_product_img .quickviewBtn {
     font-family: Lato;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0%;
-color: #191C1F;
-margin-top: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 8%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3A3845;
 }
-.related_product_item .price{
+
+.related_product_item h2 {
     font-family: Lato;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0%;
-color: #2D1817;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #191C1F;
+    margin-top: 15px;
 }
-.related_product_item label{
+
+.related_product_item .price {
     font-family: Lato;
-font-weight: 600;
-font-size: 14px;
-line-height: 25.43px;
-letter-spacing: 0px;
-vertical-align: middle;
-color: #6C7275;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #2D1817;
 }
-.related_product_item .relatedquantity_set{
+
+.related_product_item label {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25.43px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #6C7275;
+}
+
+.related_product_item .relatedquantity_set {
     border: 1px solid #E4E7E9;
     border-radius: 7px;
     background: #FFFFFF;
     padding: 5px 10px;
 }
-.relatedquantityInput{
+
+.relatedquantityInput {
     font-family: Lato;
-font-weight: 400;
-font-style: Regular;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0%;
-color: #475156;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #475156;
 }
+
+.quickViewProductInformationtable h1 {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 43.04px;
+    letter-spacing: -0.39px;
+    color: #141718;
+    margin-bottom: 15px;
+}
+
+.quickViewProductInformationtable h2 {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25.43px;
+    letter-spacing: 0px;
+    color: #6C7275;
+    margin-bottom: 15px;
+}
+
+.quickViewProductInformationtable h2 span {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 19.57px;
+    letter-spacing: 0px;
+    color: #141718;
+}
+
+.quickViewProductInformationtable p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 26px;
+    line-height: 33.26px;
+    letter-spacing: -0.59px;
+    color: #2D1817;
+    margin-bottom: 24px;
+}
+
+.quickViewProductInformationtable h4 {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    padding-bottom: 7px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #191C1F;
+    border-bottom: 1.5px solid #000000;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.viewDetailsBtn {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 8%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3A3845;
+    background: #F2F2F7;
+    border: 1px solid #3A3845;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 151px;
+    text-wrap: nowrap;
+}
+
+.viewDetailsBtn:hover {
+    background: #e0e1e8;
+    transition: all 0.3s ease;
+    color: #141718;
+}
+
+
+.viewDetailsBtn span {
+    border: 1px solid #8E8E93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    padding: 3px;
+    color: #000000;
+    margin-left: 20px;
+    font-size: 7px;
+
+}
+
 /* ======================================================== */
 /* ===============product details page end================= */
 /* ======================================================== */

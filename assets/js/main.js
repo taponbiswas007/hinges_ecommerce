@@ -212,8 +212,26 @@ function updateNavButtons(swiper) {
     var swiper2 = new Swiper(".productDetailsSlider2", {
       spaceBetween: 10,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".producDnext",
+        prevEl: ".producDprev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
+// quick view slider start
+  var swiper = new Swiper(".quickviewSlider", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".quickviewSlider2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".quickViewnext",
+        prevEl: ".quickViewprev",
       },
       thumbs: {
         swiper: swiper,
