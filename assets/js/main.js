@@ -76,6 +76,20 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.productinformation_tab_area ul li button').click(function(){
+        $('.productinformation_tab_area ul li button').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+$(document).ready(function(){
+    $('.color_btn').click(function(){
+        $('.color_btn').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
 // shop by category slider start
 var swiper = new Swiper(".shopByCategorySlider", {
     slidesPerView: 1,
