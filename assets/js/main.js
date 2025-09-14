@@ -107,8 +107,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $('.color_btn').click(function(){
-        $('.color_btn').removeClass('active');
+    $('.color_area .color_btn').click(function(){
+        $(this).closest('.color_area').find('.color_btn').removeClass('active')
         $(this).addClass('active');
     });
 });

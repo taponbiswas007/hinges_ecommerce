@@ -1642,6 +1642,16 @@ footer p {
     align-items: center;
 }
 
+.productDetailsSlider .swiper-slide {
+    box-shadow: 0px 0px 16.41px 0px #00000014;
+    background: #FFFFFF;
+    margin-right: 0 !important;
+}
+
+.productDetailsSlider2 .swiper-slide {
+    background: #ffffff;
+}
+
 .productDetails_area .swiper-slide img {
     display: block;
     width: 100%;
@@ -1672,10 +1682,11 @@ footer p {
 }
 
 .productDetails_area .productDetailsSlider .swiper-slide {
-    width: 100% !important;
     height: 100%;
     padding: 10px;
 }
+
+
 
 .productDetails_area .productDetailsSlider .swiper-slide-thumb-active {
     border: 0.56px solid #2D1817;
@@ -1812,12 +1823,11 @@ footer p {
 }
 
 .productInformationtable tr td {
-    width: 33%;
     padding-bottom: 15px;
 }
 
 .productInformationtable tr td:last-child {
-    width: fit-content;
+    width: 101px;
 }
 
 .productInformationtable tr td h3 {
@@ -1828,7 +1838,6 @@ footer p {
     letter-spacing: 0px;
     color: #6C7275;
     text-align: left;
-    width: fit-content;
 }
 
 .productInformationtable tr td p {
@@ -1839,7 +1848,6 @@ footer p {
     letter-spacing: 0px;
     color: #000000;
     text-align: left;
-    width: fit-content;
 }
 
 .color_btn {
@@ -1892,8 +1900,9 @@ footer p {
     align-items: center;
     gap: 10px;
     background: #F5F5F5;
-    padding: 10px;
+    padding: 0 10px;
     border-radius: 7px;
+    height: 40px;
 }
 
 .cart_button_area button span {
@@ -1955,9 +1964,11 @@ footer p {
     border-radius: 10px;
 }
 
-.related_product_img img {
+.related_product_img .related_product_img_box {
     max-width: 50px;
     aspect-ratio: 50/43;
+    box-shadow: 0px 0px 12.64px 0px #00000014;
+    background: #ffffff;
 }
 
 .related_product_img .quickviewBtn {
@@ -2002,9 +2013,13 @@ footer p {
 
 .related_product_item .relatedquantity_set {
     border: 1px solid #E4E7E9;
-    border-radius: 7px;
+    border-radius: 3px;
     background: #FFFFFF;
     padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .relatedquantityInput {
@@ -2015,6 +2030,15 @@ footer p {
     line-height: 24px;
     letter-spacing: 0%;
     color: #475156;
+}
+
+.cart_button_area button {
+    font-size: 12px;
+    height: 40px;
+}
+
+.modal .quickviewSlider .swiper-slide-thumb-active {
+    border: 0.56px solid #2D1817;
 }
 
 .quickViewProductInformationtable h1 {
@@ -2112,6 +2136,195 @@ footer p {
     margin-left: 20px;
     font-size: 7px;
 
+}
+
+
+@media (max-width: 992px) {
+    .productDetailsMainSlider {
+        padding-bottom: 0;
+    }
+
+    .productDetailsMainSlider .swiperBtn_area button {
+        height: 25px;
+        width: 25px;
+        padding: 5px;
+    }
+
+    .productinformation_tab_area ul li button {
+        font-size: 14px;
+    }
+
+    .productInformationtable tr td h3 {
+        font-size: 12px;
+    }
+
+    .productInformationtable tr td p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .size_select {
+        font-size: 14px;
+    }
+
+    .quantity_set {
+        font-size: 13px;
+    }
+
+    .related_product_content_item {
+        width: 100%;
+    }
+
+    .size_select {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .productDetailsMainSlider {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .productDetalisSlidernavbar {
+        width: 100%;
+    }
+
+    .productDetalisSlidernavbar .swiper-wrapper {
+        flex-direction: row;
+        overflow-x: auto;
+        column-gap: 10px;
+        align-items: stretch !important;
+    }
+
+    .productDetails_area .productDetailsSlider {
+        padding: 15px 10px 0 0 !important;
+    }
+
+    .productDetails_area .productDetailsSlider .swiper-slide {
+        height: 100%;
+        padding: 5px;
+    }
+
+
+
+    .productDetailsMainSlider .swiperBtn_area .swipernext {
+        right: 0px !important;
+    }
+
+    .productDetailsMainSlider .swiperBtn_area .swiperprev {
+        left: 0px !important;
+    }
+
+    .productInformationtable tr td {
+        padding-right: 10px;
+    }
+
+    .productinformation_tab_area ul li button {
+        font-size: 11px;
+    }
+
+    .productInformationtable tr td h3 {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .productInformationtable tr td p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .card_button_area button {
+        font-size: 10px;
+    }
+      .product_details_slider_area {
+        flex-direction: column-reverse !important;
+    }
+      .productDetalisSlidernavbar .swiper-wrapper{
+        padding-top: 10px;
+      }
+}
+
+@media (max-width:575px) {
+    .product_details_breadcrumb h1 {
+        font-size: 20px;
+    }
+
+    .product_details_breadcrumb h2 {
+        font-size: 20px;
+    }
+
+    .productinformation_tab_area ul li button {
+        font-size: 13px;
+    }
+
+    .productInformationtable tr td h3 {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .productInformationtable tr td p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .card_button_area button {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:420px) {
+    .product_details_breadcrumb h1 {
+        font-size: 16px;
+    }
+
+    .product_details_breadcrumb h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:370px) {
+    .productInformationtable tr td {
+        padding-right: 10px;
+    }
+
+    .productinformation_tab_area ul li button {
+        font-size: 11px;
+    }
+
+    .productInformationtable tr td h3 {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .productInformationtable tr td p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .card_button_area button {
+        font-size: 10px;
+    }
+
+    .colorSizeandQuantityselector {
+        flex-direction: column !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .productDetails_area .productDetailsSlider .swiper-slide {
+        width: 100% !important;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .product_details_slider_area {
+        flex-direction: row !important;
+    }
+
+    .modal .quickviewSlider .swiper-slide {
+        width: 100% !important;
+    }
 }
 
 /* ======================================================== */
