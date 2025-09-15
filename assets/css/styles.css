@@ -923,9 +923,11 @@ background: #8e8e934d;
     display: block;
     transition: all 0.3s ease;
 }
-.product_card_content .product_card_title:hover{
+
+.product_card_content .product_card_title:hover {
     color: #000000;
 }
+
 .product_card_content .product_card_title span {
     color: #8E8E93;
 }
@@ -2146,13 +2148,15 @@ footer p {
     font-size: 7px;
 
 }
-.modal .productDetailsMainSlider{
+
+.modal .productDetailsMainSlider {
     padding: 22px 10px;
     min-height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .modal .productDetailsMainSlider .swiperBtn_area {
     position: absolute;
     top: 50%;
@@ -2181,7 +2185,8 @@ footer p {
     width: 22px;
     padding: 4px;
 }
-.button_area{
+
+.button_area {
     background: #F1F2F9;
     box-shadow: 0px 0.5px 1px 0px #19213D12;
     height: 34px;
@@ -2191,6 +2196,7 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+
 @media (max-width: 1200px) {
     .modal .productInformationtable tr td p {
         font-size: 14px;
@@ -2422,7 +2428,8 @@ footer p {
         margin-right: 0 !important;
         padding: 5px;
     }
-    .modal .productDetalisSlidernavbar{
+
+    .modal .productDetalisSlidernavbar {
         padding-right: 10px;
     }
 }
@@ -2435,19 +2442,237 @@ footer p {
 /* ===============Cart page start=============== */
 /* ============================================= */
 
-.cart_item_table_area h1{
-    font-family: Lato;
-font-weight: 500;
-font-style: Medium;
-font-size: 18px;
-line-height: 24px;
-letter-spacing: 0%;
-color: #191C1F;
-margin-bottom: 15px;
+.cart_item_table_area {
+    border: 1px solid #E4E7E9;
+    padding-bottom: 15px;
 }
 
+.cart_item_table_area h1 {
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #191C1F;
+    padding: 15px;
 
+}
 
+.added_product_table table {
+    width: 100%;
+    border-bottom: 1px solid #E4E7E9;
+}
+
+.added_product_table table thead {
+    background: #F2F4F5;
+    border: 1px solid #E4E7E9;
+}
+
+.added_product_table table thead tr th {
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #475156;
+    padding: 10px;
+}
+
+.added_product_table table tbody tr td {
+    vertical-align: middle;
+    padding: 24px 10px;
+}
+
+.cartitemDeletebtn {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EE5858;
+    border: 1.5px solid #EE5858;
+    border-radius: 50%;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.cartitemDeletebtn:hover {
+    background: #f1f1f1;
+}
+
+.cartproductId {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #475156;
+}
+
+.cartproductImgBox {
+    box-shadow: 0px 0px 14.67px 0px #00000014;
+    background: #ffffff;
+    padding: 6px;
+    aspect-ratio: 0.95/1;
+    max-height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartproductImgBox img {
+    height: 100%;
+    width: 100%;
+}
+
+.cartProductName {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #191C1F;
+}
+
+.cartProductPrice {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #475156;
+}
+
+.subtotalPrice {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #475156;
+}
+
+.quantitySelector .relatedquantity_set {
+    border: 1px solid #E4E7E9;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.cart_purchase_total_price_calculate {
+    border: 1px solid #E4E7E9;
+    background: #ffffff;
+    padding: 24px;
+}
+
+.productCartBtn {
+    font-family: Lato;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    color: #3A3845;
+    line-height: 18px;
+    letter-spacing: 8%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 19px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    background: #F2F2F7;
+    border: 1px solid #3A3845;
+    transition: all 0.3s ease;
+}
+
+.productCartBtn:hover {
+    background: #D1D1D6;
+    color: #000000;
+}
+
+.total_price_calculate {
+    width: 100%;
+}
+
+.total_price_calculate tbody tr td {
+    padding-bottom: 10px;
+}
+
+.total_price_calculate tbody tr td:first-child {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #5F6C72;
+    text-align: start;
+}
+
+.total_price_calculate tbody tr td:last-child {
+    font-family: Lato;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    text-align: end;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #191C1F;
+}
+
+.total_price_calculate tfoot {
+    border-top: 1px solid #E4E7E9;
+}
+
+.total_price_calculate tfoot tr td {
+    padding: 10px 0;
+}
+
+.total_price_calculate tfoot tr td:first-child {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #191C1F;
+    text-align: start;
+}
+
+.total_price_calculate tfoot tr td:last-child {
+    font-family: Lato;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: end;
+    color: #191C1F;
+}
+
+.proceedToCheckoutBtn {
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    background: #F2F2F7;
+    letter-spacing: 1.2%;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #8E8E93;
+    padding: 15px 10px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.proceedToCheckoutBtn:hover {
+    background: #D9D9D9;
+}
 
 /* ============================================= */
 /* ===============Cart page end================= */

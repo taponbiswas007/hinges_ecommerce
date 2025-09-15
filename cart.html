@@ -26,7 +26,7 @@
 
 <body>
     <!-- pre loader with logo start -->
-    <div class="preloader ">
+    <!-- <div class="preloader ">
         <div class="d-flex h-100 w-100 justify-content-center align-items-center flex-column">
             <div class="logoBox  ">
                 <img src="assets/images/logo.webp" alt="Logo">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- pre loader with logo end -->
 
     <!-- ========================Header area start======================== -->
@@ -436,7 +436,7 @@
     <!-- ========================Header area end========================== -->
 
     <!-- ==============Cart area start============= -->
-     <section class="cart_area py-5">
+    <section class="cart_area py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-7">
@@ -446,17 +446,114 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <td></td>
+                                        <th>Delete</th>
+                                        <th>ID</th>
+                                        <th>Products</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Sub-Total</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <button class="cartitemDeletebtn">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </td>
+                                        <td class="cartproductId">
+                                            111102
+                                        </td>
+                                        <td class="cartProductName">
+                                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                                <div class="cartproductImgBox">
+                                                    <img src="assets/images/bed.webp" alt="">
+                                                </div>
+                                                Elbrus Queen Bed (fb 64x2x20)
+                                            </div>
+                                        </td>
+                                        <td class="cartProductPrice">
+                                            $1075.00
+                                        </td>
+                                        <td class="quantitySelector">
+                                            <div class="relatedquantity_set">
+                                                <button class="relateddecreaseQty">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </button>
+                                                <span class="relatedquantityInput">00</span>
+                                                <button class="relatedincreaseQty">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="subtotalPrice">
+                                            $1075.00
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
+                            <div class="d-flex p-3 justify-content-between align-items-center gap-4">
+                                <a href="#" class="productCartBtn">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    Return to Shop
+                                </a>
+                                <button class="productCartBtn">
+                                    Update cart
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5"></div>
+                <div class="col-lg-5">
+                    <!-- proceed to checkout area -->
+                    <div class="cart_purchase_total_price_calculate">
+                        <table class="total_price_calculate">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Sub-total
+                                    </td>
+                                    <td>
+                                        $2150
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Discount
+                                    </td>
+                                    <td>
+                                        $24
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tax
+                                    </td>
+                                    <td>
+                                        $61.99
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        Total
+                                    </td>
+                                    <td>
+                                        $2,187.99
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <button class="proceedToCheckoutBtn">
+                            Proceed to Checkout
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- ==============Cart area end============= -->
 
     <!-- ============footer area start=========== -->
