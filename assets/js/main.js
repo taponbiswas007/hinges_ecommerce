@@ -127,19 +127,23 @@ $(document).ready(function(){
         }
     });
 });
-$(document).ready(function(){
-    $('.relatedincreaseQty').click(function(){
-        var currentVal = parseInt($('.relatedquantityInput').text()); // text() ব্যবহার করো
-        $('.relatedquantityInput').text(currentVal + 1);
+// Reusable jQuery Script
+$(document).ready(function () {
+    $(document).on('click', '.relatedincreaseQty', function () {
+        const quantityEl = $(this).siblings('.relatedquantityInput');
+        let currentVal = parseInt(quantityEl.text());
+        quantityEl.text((currentVal + 1).toString().padStart(2, '0')); // always 2 digits
     });
 
-    $('.relateddecreaseQty').click(function(){
-        var currentVal = parseInt($('.relatedquantityInput').text());
+    $(document).on('click', '.relateddecreaseQty', function () {
+        const quantityEl = $(this).siblings('.relatedquantityInput');
+        let currentVal = parseInt(quantityEl.text());
         if (currentVal > 1) {
-            $('.relatedquantityInput').text(currentVal - 1);
+            quantityEl.text((currentVal - 1).toString().padStart(2, '0'));
         }
     });
 });
+
 
 
 // shop by category slider start
