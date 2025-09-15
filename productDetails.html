@@ -488,16 +488,16 @@
                             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
                                 class="swiper productDetailsSlider2">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" data-bs-toggle="modal" data-bs-target="#imagePopup">
                                         <img src="assets/images/productDetailsimg/bed.webp" />
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" data-bs-toggle="modal" data-bs-target="#imagePopup">
                                         <img src="assets/images/productDetailsimg/bed_front_back.webp" />
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" data-bs-toggle="modal" data-bs-target="#imagePopup">
                                         <img src="assets/images/productDetailsimg/without_decorate_bed.webp" />
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" data-bs-toggle="modal" data-bs-target="#imagePopup">
                                         <img src="assets/images/productDetailsimg/bed_behind.webp" />
                                     </div>
                                 </div>
@@ -736,6 +736,54 @@
     <!-- ====================product details area end============================= -->
 
 
+    <!-- ======================image pop up area start===================== -->
+    <div class="modal fade" id="imagePopup" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-end align-items-start">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="product_details_slider_area d-flex justify-content-start align-items-start">
+                                <div class="productDetailsMainSlider">
+                                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                        class="swiper imageviewSlider">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/wareDrop.webp" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/productDetailsimg/bed_front_back.webp" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/productDetailsimg/without_decorate_bed.webp" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/images/productDetailsimg/bed_behind.webp" />
+                                            </div>
+                                        </div>
+                                        <div class="swiperBtn_area">
+                                            <button class="swiperprev swiper-button-prev imageViewprev">
+                                                <i class="fa-solid fa-arrow-left"></i>
+                                            </button>
+                                            <button class="swipernext swiper-button-next imageViewnext">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================image pup up area end===================== -->
+
     <!-- ======================quick view pop up area start===================== -->
     <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -751,7 +799,7 @@
                                     <div thumbsSlider="" class="swiper quickviewSlider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/images/productDetailsimg/bed.webp" />
+                                                <img src="assets/images/wareDrop.webp" />
                                             </div>
                                             <div class="swiper-slide">
                                                 <img src="assets/images/productDetailsimg/bed_front_back.webp" />
@@ -766,16 +814,11 @@
                                     </div>
                                 </div>
                                 <div class="productDetailsMainSlider">
-                                    <div class="productLabel_area">
-                                        <div class="card_top_area d-flex justify-content-end align-items-center gap-3">
-                                            <span>best seller</span>
-                                        </div>
-                                    </div>
                                     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
                                         class="swiper quickviewSlider2">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="assets/images/productDetailsimg/bed.webp" />
+                                                <img src="assets/images/wareDrop.webp" />
                                             </div>
                                             <div class="swiper-slide">
                                                 <img src="assets/images/productDetailsimg/bed_front_back.webp" />
@@ -787,16 +830,16 @@
                                                 <img src="assets/images/productDetailsimg/bed_behind.webp" />
                                             </div>
                                         </div>
+                                        <div class="swiperBtn_area">
+                                            <button class="swiperprev swiper-button-prev quickViewprev">
+                                                <i class="fa-solid fa-arrow-left"></i>
+                                            </button>
+                                            <button class="swipernext swiper-button-next quickViewnext">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
 
-                                    </div>
-                                    <div class="swiperBtn_area">
-                                        <button class="swiperprev swiper-button-prev quickViewprev">
-                                            <i class="fa-solid fa-arrow-left"></i>
-                                        </button>
-                                        <button class="swipernext swiper-button-next quickViewnext">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -820,7 +863,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex justify-content-end">
+                                                <div class="d-flex justify-content-start">
                                                     <div>
                                                         <h3>Wood Type</h3>
                                                         <p>Sheesham Wood</p>

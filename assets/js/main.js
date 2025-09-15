@@ -237,4 +237,11 @@ function updateNavButtons(swiper) {
         swiper: swiper,
       },
     });
+    var swiper = new Swiper(".imageviewSlider", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".imageViewnext",
+        prevEl: ".imageViewprev",
+      },
+    });
 
