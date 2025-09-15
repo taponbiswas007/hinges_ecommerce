@@ -2146,7 +2146,13 @@ footer p {
     font-size: 7px;
 
 }
-
+.modal .productDetailsMainSlider{
+    padding: 22px 10px;
+    min-height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .modal .productDetailsMainSlider .swiperBtn_area {
     position: absolute;
     top: 50%;
@@ -2175,7 +2181,16 @@ footer p {
     width: 22px;
     padding: 4px;
 }
-
+.button_area{
+    background: #F1F2F9;
+    box-shadow: 0px 0.5px 1px 0px #19213D12;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 1200px) {
     .modal .productInformationtable tr td p {
         font-size: 14px;
@@ -2406,6 +2421,9 @@ footer p {
         width: 100% !important;
         margin-right: 0 !important;
         padding: 5px;
+    }
+    .modal .productDetalisSlidernavbar{
+        padding-right: 10px;
     }
 }
 
