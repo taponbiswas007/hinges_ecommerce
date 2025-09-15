@@ -1322,8 +1322,7 @@ footer p {
     display: block;
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
-    /* object-fit: contain; */
+    object-fit: cover;
 }
 
 .navigationBtn {
@@ -1934,6 +1933,7 @@ footer p {
     letter-spacing: 0%;
     vertical-align: middle;
     color: #404040;
+    padding-bottom: 25px;
 }
 
 .productInformationtable {
@@ -2237,12 +2237,16 @@ padding: 4px;
     }
 
     .productDetails_area .productDetailsSlider {
-        padding: 15px 10px 0 0 !important;
+        padding: 15px 0 0 0 !important;
     }
 
     .productDetails_area .productDetailsSlider .swiper-slide {
         height: 100%;
         padding: 5px;
+        aspect-ratio: 1/0.9;
+    }
+    .productDetails_area .productDetailsSlider .swiper-slide:last-child{
+        margin-left: -1px;
     }
 
 
