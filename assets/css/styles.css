@@ -1308,17 +1308,19 @@ footer p {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #444;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    /* object-fit: contain; */
 }
 
 .navigationBtn {
