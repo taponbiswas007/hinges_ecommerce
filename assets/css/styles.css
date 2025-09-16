@@ -1990,7 +1990,7 @@ footer p {
 .related_product_img .quickviewBtn {
     font-family: Lato;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     letter-spacing: 8%;
     text-align: center;
@@ -2400,7 +2400,7 @@ footer p {
     }
 
     .productInformationtable tr td h3 {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 16px;
         margin-bottom: 7px;
     }
@@ -2419,6 +2419,23 @@ footer p {
     }
 }
 
+@media (min-width: 993px) {
+    .related_product_content_item{
+        width: 60%;
+    }
+}
+@media (min-width: 993px) and (max-width: 1261px) {
+    .cart_button_area button span{
+        height: 16px;
+        width: 16px;
+        padding: 3px;
+    }
+    .cart_button_area button{
+        padding: 0 3px !important;
+        column-gap: 5px !important;
+        font-size: 10px;
+    }
+}
 @media (min-width: 769px) {
     .productDetails_area .productDetailsSlider .swiper-slide {
         width: 100% !important;
