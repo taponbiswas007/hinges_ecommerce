@@ -147,7 +147,8 @@ img {
 /* typography end */
 
 
-
+/* =================authentication page start================ */
+/* =================authentication page end================ */
 
 
 
@@ -1243,15 +1244,15 @@ footer p {
     }
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
 
     .container,
     .container-sm {
         max-width: 100%;
     }
-}
+} */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
     .container,
     .container-md,
@@ -1261,7 +1262,7 @@ footer p {
 }
 
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
 
     .container,
     .container-lg,
@@ -1271,26 +1272,28 @@ footer p {
         max-width: 1080px;
     }
 }
-
-@media (min-width: 1100px) {
+*/
+@media (min-width: 769px) {
 
     .container,
     .container-lg,
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1180px;
+        max-width: unset;
+        width: calc(100% - 50px);
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
     .container,
     .container-lg,
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1380px;
+        max-width: unset;
+        width: calc(100% - 80px);
     }
 }
 
@@ -2053,6 +2056,10 @@ footer p {
     height: 40px;
 }
 
+#imagePopup .modal-body {
+    padding: 10px 30px 40px 30px;
+}
+
 .modal .quickviewSlider .swiper-slide-thumb-active {
     border: 0.56px solid #2D1817;
 }
@@ -2180,9 +2187,11 @@ footer p {
     width: 22px;
     padding: 4px;
 }
-#quickViewModal .modal-body{
+
+#quickViewModal .modal-body {
     padding: 30px 30px 60px 30px;
 }
+
 .modal .productDetailsMainSlider .swiperBtn_area .swiperprev {
     left: 0 !important;
     box-shadow: 0px 4.26px 8.51px 0px #00000009;
@@ -2310,6 +2319,11 @@ footer p {
         line-height: 16px;
     }
 
+    #quickViewModal .productInformationtable tr td h3 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
     .productInformationtable tr td p {
         font-size: 11px;
         line-height: 15px;
@@ -2352,7 +2366,7 @@ footer p {
     }
 
     .productInformationtable tr td h3 {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 21px;
     }
 
@@ -2367,6 +2381,10 @@ footer p {
 
     .modal .productDetalisSlidernavbar .swiper-wrapper {
         justify-content: center;
+    }
+
+    #quickViewModal .modal-body {
+        padding: 10px 10px 40px 10px;
     }
 }
 
@@ -2385,8 +2403,8 @@ footer p {
     }
 
     .modal .productInformationtable tr td p {
-        font-size: 11px;
-        line-height: 13px;
+        font-size: 13px;
+        line-height: 17px;
     }
 }
 
@@ -2400,13 +2418,13 @@ footer p {
     }
 
     .productInformationtable tr td h3 {
-        font-size: 11px;
+        font-size: 12px;
         line-height: 16px;
         margin-bottom: 7px;
     }
 
     .productInformationtable tr td p {
-        font-size: 11px;
+        font-size: 12px;
         line-height: 15px;
     }
 
@@ -2419,23 +2437,46 @@ footer p {
     }
 }
 
+@media (max-width: 346px) {
+  /* #quickViewModal .productInformationtable tr td h3 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .modal .productInformationtable tr td p {
+    font-size: 11px;
+    line-height: 15px;
+  } */
+      .productInformationtable tr td h3 {
+        font-size: 11px;
+        line-height: 16px;
+        margin-bottom: 7px;
+    }
+
+    .productInformationtable tr td p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+}
 @media (min-width: 993px) {
-    .related_product_content_item{
+    .related_product_content_item {
         width: 60%;
     }
 }
+
 @media (min-width: 993px) and (max-width: 1261px) {
-    .cart_button_area button span{
+    .cart_button_area button span {
         height: 16px;
         width: 16px;
         padding: 3px;
     }
-    .cart_button_area button{
+
+    .cart_button_area button {
         padding: 0 3px !important;
         column-gap: 5px !important;
         font-size: 10px;
     }
 }
+
 @media (min-width: 769px) {
     .productDetails_area .productDetailsSlider .swiper-slide {
         width: 100% !important;
@@ -2818,13 +2859,15 @@ footer p {
         width: 100%;
         text-align: center;
     }
-    .cartitemDeletebtn{
+
+    .cartitemDeletebtn {
         position: absolute;
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
     }
-     .cartProductName {
+
+    .cartProductName {
         font-size: 14px;
         line-height: 17px;
     }
@@ -2848,13 +2891,16 @@ footer p {
     .quantitySelector .relatedquantityInput {
         font-size: 14px !important;
     }
-    .cart_item_table_area{
+
+    .cart_item_table_area {
         padding: 10px !important;
     }
-    .proceedToCheckoutBtn{
+
+    .proceedToCheckoutBtn {
         font-size: 14px;
     }
-    .cart_item_table_area h1{
+
+    .cart_item_table_area h1 {
         padding-left: 0 !important;
         padding-top: 5px !important;
     }
