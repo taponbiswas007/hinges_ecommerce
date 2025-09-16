@@ -1579,6 +1579,8 @@ footer p {
     background: #1570EF26;
     padding: 8px 14px;
     border-radius: 4px;
+    position: absolute;
+    right: 0;
     top: 10px;
 }
 
