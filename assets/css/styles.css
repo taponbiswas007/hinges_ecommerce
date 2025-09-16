@@ -2835,6 +2835,10 @@ footer p {
     .proceedToCheckoutBtn{
         font-size: 14px;
     }
+    .cart_item_table_area h1{
+        padding-left: 0 !important;
+        padding-top: 5px !important;
+    }
 }
 
 /* ============================================= */
