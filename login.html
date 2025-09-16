@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hinges Furniture || Home</title>
+    <title>Hinges Furniture || Login</title>
     <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
     <!-- font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-     <!-- bootstarp cdn -->
+    <!-- bootstarp cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- font awesome css -->
@@ -28,11 +28,58 @@
 </head>
 
 <body>
-   <section class="authentication_full_wrapper">
-    <div class="auth_banner">
-        
-    </div>
-   </section>
+    <section class="authentication_full_wrapper">
+        <div class="auth_banner">
+            <div class="authimg_box">
+                <img src="assets/images/authbanner.webp" alt="Hinges Furniture">
+            </div>
+        </div>
+        <div class="auth_content_area">
+            <div class="auth_inner">
+                <h1>
+                    Welcome to <br> <span>hinges</span> Furniture!
+                </h1>
+                <p>For login issues <span>email:</span> support@hingesfurniture.com or call: 214-484-9664.</p>
+                <form class="authForm">
+                    <div class="authinput_feild">
+                        <label id="l-userEmail" class="d-label">Email</label>
+                        <input type="text" name="userEmail" id="userEmail" onfocus="labelmove('userEmail')"
+                            onblur="checkInput('userEmail')" />
+                    </div>
+                    <div class="authinput_feild password_input_feild">
+                        <label id="l-password" class="d-label">Password</label>
+                        <input type="password" name="password" id="password" onfocus="labelmove('password')"
+                            onblur="checkInput('password')" />
+                        <div class="lookHidepassword">
+                            <button type="button" class="show-password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+                            <button type="button" class="hide-password" style="display:none;">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-md-3 justify-content-between align-items-center">
+                        <label class="customCheckboxWrapper">
+                            <input type="checkbox" class="customCheckbox">
+                            <span class="checkmark me-2"></span>
+                            Remember me
+                        </label>
+                        <a class="forgorPasswordlink" href="forgotPassword.html">Forgot Password?</a>
+                    </div>
+                    <button class="formSubmitBtn">
+                        Sign In
+                    </button>
+                    <h3 class="orText">
+                        Or
+                    </h3>
+                    <h4 class="conditionalText">
+                        Don’t have an account? <a href="signUp.html">Register here</a>
+                    </h4>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -67,6 +114,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

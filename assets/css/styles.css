@@ -148,6 +148,369 @@ img {
 
 
 /* =================authentication page start================ */
+.authentication_full_wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+
+
+.authimg_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* যদি parent height fixed থাকে, তাহলে container height নেবে */
+    width: 100%;
+}
+
+.authimg_box img {
+    width: 100%;
+    /* stretch হবে না */
+    height: 100%;
+    /* container height respect করবে */
+
+}
+
+.auth_banner {
+    width: 100%;
+}
+
+.auth_content_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+
+.auth_inner {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.auth_inner h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 60px;
+    line-height: 114.99999999999999%;
+    letter-spacing: -1%;
+    color: #2D1817;
+
+}
+
+.auth_inner h1 span {
+    color: #9CB31A;
+    text-transform: uppercase;
+}
+
+.auth_inner p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 123%;
+    letter-spacing: -1%;
+    color: #000000;
+}
+
+.auth_inner p span {
+    font-weight: 500;
+}
+
+.authForm {
+    padding-top: 46px;
+}
+
+.authinput_feild {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.authinput_feild .d-label {
+    position: absolute;
+    left: 20px;
+    top: 23px;
+    color: #494949;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    padding: 0 5px;
+    z-index: 1;
+}
+
+.authinput_feild input {
+    width: 100%;
+    height: 64px;
+    padding: 20px 23px;
+    outline: none;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    color: #494949;
+    background: #ffffff;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.authinput_feild input:focus {
+    border-color: #D8D8D8;
+}
+
+.d-label.floating {
+    transform: translateY(-32px);
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #2D1817;
+    padding: 0 2px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+/* .authForm input[type=submit] {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 30px;
+    background-color: #e29b1b;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.authForm input[type=submit]:hover {
+    background-color: #000;
+    color: #e29b1b;
+    box-shadow: 0 0 10px rgba(226, 155, 27, 0.5);
+} */
+
+.lookHidepassword {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.authForm .customCheckboxWrapper {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1E1E1E;
+}
+
+.authForm .forgorPasswordlink {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1E1E1E;
+}
+
+.formSubmitBtn {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+    background: #2D1817;
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+.formSubmitBtn:hover {
+    background: #222222;
+}
+
+.orText {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1E1E1E;
+    margin: 22px 0;
+    text-align: center;
+}
+
+.conditionalText {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+.conditionalText a {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #007AFF;
+}
+
+@media (min-width:768px) {
+    .auth_content_area {
+        width: 400px;
+    }
+}
+
+@media (min-width:992px) {
+    .auth_content_area {
+        width: 500px;
+    }
+}
+
+@media (min-width:1400px) {
+    .auth_content_area {
+        width: 50%;
+    }
+}
+
+@media (max-width:1400px) {
+    .auth_inner h1 {
+        font-size: 49px;
+    }
+}
+
+@media (max-width: 992px) {
+    .auth_inner h1 {
+        font-size: 37px;
+    }
+
+    .auth_inner p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth_content_area {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffffaf;
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .auth_inner {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .authinput_feild input {
+        height: 50px;
+        padding: 7px 20px;
+    }
+
+    .authinput_feild .d-label {
+        top: 15px;
+    }
+
+    .d-label.floating {
+        transform: translateY(-24px);
+    }
+
+    .authinput_feild input {
+        border: none;
+    }
+
+    .formSubmitBtn {
+        height: 47px;
+        margin-top: 20px;
+    }
+
+    .authinput_feild {
+        margin-bottom: 25px;
+    }
+
+    .password_input_feild {
+        margin-bottom: 15px !important;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .auth_inner h1 {
+        font-size: 32px;
+    }
+
+    .auth_inner p {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 500px) {
+    .authForm {
+        padding-top: 12px !important;
+    }
+
+    .orText {
+        margin: 10px 0;
+    }
+}
+
+@media (max-height: 600px) and (min-width: 600px) {
+    .authinput_feild input {
+        height: 50px;
+        padding: 7px 20px;
+    }
+
+    .authinput_feild .d-label {
+        top: 15px;
+    }
+
+    .d-label.floating {
+        transform: translateY(-24px);
+    }
+
+    .formSubmitBtn {
+        height: 47px;
+        margin-top: 20px;
+    }
+
+    .authinput_feild {
+        margin-bottom: 25px;
+    }
+
+    .password_input_feild {
+        margin-bottom: 15px !important;
+    }
+
+    .auth_inner h1 {
+        font-size: 30px;
+    }
+
+}
+
 /* =================authentication page end================ */
 
 
@@ -2438,7 +2801,8 @@ footer p {
 }
 
 @media (max-width: 346px) {
-  /* #quickViewModal .productInformationtable tr td h3 {
+
+    /* #quickViewModal .productInformationtable tr td h3 {
     font-size: 11px;
     line-height: 16px;
   }
@@ -2446,7 +2810,7 @@ footer p {
     font-size: 11px;
     line-height: 15px;
   } */
-      .productInformationtable tr td h3 {
+    .productInformationtable tr td h3 {
         font-size: 11px;
         line-height: 16px;
         margin-bottom: 7px;
@@ -2457,6 +2821,7 @@ footer p {
         line-height: 15px;
     }
 }
+
 @media (min-width: 993px) {
     .related_product_content_item {
         width: 60%;
