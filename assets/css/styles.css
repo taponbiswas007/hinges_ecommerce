@@ -877,7 +877,10 @@ background: #8e8e934d;
     padding: 19px;
     padding-bottom: 31px;
 }
-
+.card_main_link:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
 .card_top_area h2 {
     font-family: Lato;
     font-weight: 400;
@@ -886,6 +889,7 @@ background: #8e8e934d;
     line-height: 33px;
     letter-spacing: 0%;
     vertical-align: middle;
+    color: #404040;
 
 }
 
@@ -907,10 +911,11 @@ background: #8e8e934d;
 .product_card_img {
     width: 100%;
     aspect-ratio: 393/343;
+    overflow: hidden;
 }
 
 
-.product_card_content .product_card_title {
+.product_card_title {
     font-family: Lato;
     font-weight: 400;
     font-style: Regular;
@@ -923,12 +928,7 @@ background: #8e8e934d;
     display: block;
     transition: all 0.3s ease;
 }
-
-.product_card_content .product_card_title:hover {
-    color: #000000;
-}
-
-.product_card_content .product_card_title span {
+.product_card_title span {
     color: #8E8E93;
 }
 
