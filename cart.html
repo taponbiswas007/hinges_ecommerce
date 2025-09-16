@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-     <!-- bootstarp cdn -->
+    <!-- bootstarp cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- font awesome css -->
@@ -446,7 +446,7 @@
                     <div class="cart_item_table_area">
                         <h1>Cart</h1>
                         <div class="added_product_table">
-                            <table>
+                            <table class="cartTable">
                                 <thead>
                                     <tr class="text-nowrap">
                                         <th>Delete</th>
@@ -459,52 +459,74 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>
+                                        <td data-label="Delete">
                                             <button class="cartitemDeletebtn">
                                                 <i class="fa-solid fa-xmark"></i>
                                             </button>
                                         </td>
-                                        <td class="cartproductId">
-                                            111102
-                                        </td>
-                                        <td class="cartProductName">
-                                            <div class="d-flex justify-content-start align-items-center gap-3">
+                                        <td data-label="ID" class="cartproductId">111102</td>
+                                        <td data-label="Products" class="cartProductName">
+                                            <div
+                                                class="d-flex justify-content-sm-start justify-content-end align-items-center gap-sm-3 gap-1">
                                                 <div class="cartproductImgBox flex-shrink-0">
                                                     <img src="assets/images/bed.webp" alt="">
                                                 </div>
                                                 Elbrus Queen Bed (fb 64x2x20)
                                             </div>
                                         </td>
-                                        <td class="cartProductPrice">
-                                            $1075.00
-                                        </td>
-                                        <td class="quantitySelector">
-                                            <div class="relatedquantity_set d-flex justify-content-center align-items-center gap-2 flex-nowrap">
-                                                <button class="relateddecreaseQty">
-                                                    <i class="fa-solid fa-minus"></i>
-                                                </button>
+                                        <td data-label="Price" class="cartProductPrice">$1075.00</td>
+                                        <td data-label="Quantity" class="quantitySelector">
+                                            <div
+                                                class="relatedquantity_set d-flex justify-content-center align-items-center gap-2 flex-nowrap">
+                                                <button class="relateddecreaseQty"><i
+                                                        class="fa-solid fa-minus"></i></button>
                                                 <span class="relatedquantityInput">00</span>
-                                                <button class="relatedincreaseQty">
-                                                    <i class="fa-solid fa-plus"></i>
-                                                </button>
+                                                <button class="relatedincreaseQty"><i
+                                                        class="fa-solid fa-plus"></i></button>
                                             </div>
                                         </td>
-                                        <td class="subtotalPrice">
-                                            $1075.00
+                                        <td data-label="Sub-Total" class="subtotalPrice">$1075.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Delete">
+                                            <button class="cartitemDeletebtn">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
                                         </td>
+                                        <td data-label="ID" class="cartproductId">111102</td>
+                                        <td data-label="Products" class="cartProductName">
+                                            <div
+                                                class="d-flex justify-content-sm-start justify-content-end align-items-center gap-sm-3 gap-1">
+                                                <div class="cartproductImgBox flex-shrink-0">
+                                                    <img src="assets/images/bed.webp" alt="">
+                                                </div>
+                                                Elbrus Queen Bed (fb 64x2x20)
+                                            </div>
+                                        </td>
+                                        <td data-label="Price" class="cartProductPrice">$1075.00</td>
+                                        <td data-label="Quantity" class="quantitySelector">
+                                            <div
+                                                class="relatedquantity_set d-flex justify-content-center align-items-center gap-2 flex-nowrap">
+                                                <button class="relateddecreaseQty"><i
+                                                        class="fa-solid fa-minus"></i></button>
+                                                <span class="relatedquantityInput">00</span>
+                                                <button class="relatedincreaseQty"><i
+                                                        class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td data-label="Sub-Total" class="subtotalPrice">$1075.00</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="d-flex p-3 justify-content-between align-items-center gap-4">
+
+                            <div class="d-flex p-3 justify-content-between align-items-center gap-4 cartFooter">
                                 <a href="#" class="productCartBtn">
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                    Return to Shop
+                                    <i class="fa-solid fa-arrow-left"></i> Return to Shop
                                 </a>
-                                <button class="productCartBtn">
-                                    Update cart
-                                </button>
+                                <button class="productCartBtn">Update cart</button>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -559,7 +581,7 @@
     </section>
     <!-- ==============Cart area end============= -->
 
-   <!-- ======================quick view pop up area start===================== -->
+    <!-- ======================quick view pop up area start===================== -->
     <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
