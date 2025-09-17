@@ -1448,6 +1448,7 @@ background: #8e8e934d;
     background: #FFFFFF;
     padding: 19px;
     padding-bottom: 31px;
+    height: calc(100% - 30px);
 }
 
 .card_main_link:hover img {
