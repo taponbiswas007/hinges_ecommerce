@@ -339,10 +339,14 @@ img {
     border-radius: 8px;
     transition: all 0.3s ease;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formSubmitBtn:hover {
     background: #222222;
+    color: #ffffff;
 }
 
 .orText {
