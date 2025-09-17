@@ -154,6 +154,7 @@ img {
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: nowrap;
+    background: #ffffff;
 }
 
 
@@ -374,6 +375,69 @@ img {
     color: #007AFF;
 }
 
+.authrecover_area {
+    max-width: 668px;
+    width: 90%;
+    background: #ffffff;
+    box-shadow: 0px 4px 30px 0px #0000001C;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.authrecover_area .logo {
+    width: 140px;
+    height: 93px;
+    display: block;
+    margin-bottom: 28px;
+}
+
+.authrecover_area legend {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 114.99999999999999%;
+    letter-spacing: -1%;
+    color: #2D1817;
+    margin-bottom: 10px;
+}
+
+.authrecover_area p {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1E1E1E;
+    margin-bottom: 46px;
+}
+
+.otp_area {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 23px;
+}
+
+.otp_area input {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1E1E1E;
+    width: 66px;
+    height: 64px;
+    border: 1px solid #D8D8D8 !important;
+    border-radius: 8px;
+    background: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.authrecover_area .authinput_feild input {
+    border: 1px solid #D8D8D8 !important;
+}
+
 @media (min-width:768px) {
     .auth_content_area {
         width: 400px;
@@ -409,7 +473,8 @@ img {
 }
 
 @media (max-width: 768px) {
-    .auth_content_area {
+
+    /* .auth_content_area {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -419,6 +484,34 @@ img {
         border-radius: 10px;
         max-width: 400px;
         width: 100%;
+        z-index: 2;
+    } */
+    .auth_content_area {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.25);
+        /* খুব হালকা semi-transparent */
+        backdrop-filter: blur(12px) saturate(180%);
+        -webkit-backdrop-filter: blur(12px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        max-width: 400px;
+        width: 90%;
+        z-index: 2;
+    }
+
+    .responsiveOverlay::after {
+        position: fixed;
+        top: 0;
+        left: 0;
+        content: ' ';
+        background: #000000a8;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
     }
 
     .auth_inner {
@@ -456,6 +549,37 @@ img {
         margin-bottom: 15px !important;
     }
 
+    .auth_inner h1 {
+        color: #ffffff;
+    }
+
+    .auth_inner p {
+        color: #ffffff;
+    }
+
+    .authForm .customCheckboxWrapper,
+    .authForm .forgorPasswordlink,
+    .orText,
+    .conditionalText {
+        color: #ffffff;
+    }
+
+    .conditionalText a {
+        color: #04ff69;
+    }
+
+    .authrecover_area legend {
+        font-size: 35px;
+    }
+
+    .authrecover_area .authForm {
+        padding-top: 0 !important;
+    }
+
+    .createPassauthrecover_area legend {
+        font-size: 29px;
+    }
+
 }
 
 @media (max-width: 440px) {
@@ -466,6 +590,59 @@ img {
     .auth_inner p {
         font-size: 10px;
     }
+
+    .authrecover_area legend {
+        font-size: 28px;
+    }
+
+    .authrecover_area {
+        padding: 20px 10px;
+    }
+
+    .otp_area {
+        column-gap: 10px;
+    }
+
+    .otp_area input {
+        width: 59px;
+        height: 57px;
+    }
+
+    .authrecover_area p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 374px) {
+    .createPassauthrecover_area legend {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    .auth_inner h1 {
+        font-size: 29px;
+    }
+
+    .auth_inner p {
+        font-size: 9px;
+    }
+
+    .authForm .forgorPasswordlink {
+        font-size: 13px;
+    }
+
+    .authForm .customCheckboxWrapper {
+        font-size: 13px;
+    }
+
+    .conditionalText {
+        font-size: 14px;
+    }
+
+    .authrecover_area p {
+        font-size: 11px;
+    }
 }
 
 @media (max-height: 500px) {
@@ -475,6 +652,10 @@ img {
 
     .orText {
         margin: 10px 0;
+    }
+
+    .authrecover_area p {
+        margin-bottom: 27px;
     }
 }
 
@@ -507,6 +688,20 @@ img {
 
     .auth_inner h1 {
         font-size: 30px;
+    }
+
+    .authrecover_area p {
+        margin-bottom: 20px;
+    }
+
+    .authrecover_area .logo {
+        margin-bottom: 20px;
+        width: 119px;
+        height: auto;
+    }
+
+    .createPassauthrecover_area {
+        padding: 20px 40px;
     }
 
 }
@@ -1902,7 +2097,7 @@ footer p {
 .customCheckboxWrapper input.customCheckbox:checked+.checkmark::after {
     content: "";
     position: absolute;
-    left: 5px;
+    left: 7px;
     top: 2px;
     width: 6px;
     height: 10px;
