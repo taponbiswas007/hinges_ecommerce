@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinges Furniture || Home</title>
+    <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstarp cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+    <!-- swipper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- ========================Header area start======================== -->
+    <section class="header_area">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center gap-lg-1 gap-xl-5 gap-4">
+                <a href="index.html" class="logo flex-shrink-0">
+                    <img loading="lazy" src="assets/images/logo.webp" alt="Hinges Furniture">
+                </a>
+                <div class="navigation_items_area">
+                    <!-- top link area -->
+                    <div
+                        class="d-flex top_link_area justify-content-lg-between justify-content-end align-items-center gap-xl-5 gap-3">
+                        <div
+                            class="topbarlink_list d-flex justify-content-between align-items-center gap-3 d-lg-flex d-none">
+                            <a href="inStock.html">
+                                in stock
+                            </a>
+                            <a href="newArrivals.html">
+                                NEW ARRIVALs
+                            </a>
+                            <a href="bestSellers.html">
+                                BEST SELLERs
+                            </a>
+                            <a href="sale&Promotion.html">
+                                SALE & PROMOTIONS
+                            </a>
+                            <a href="someofakind.html">
+                                SOME OF A KIND
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center gap-4">
+                            <div class="user_auth_items">
+
+                                <div class="dropdown">
+                                    <button class="searchBtn authcartLink" type="button" id="searchBtn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/images/search_icon.svg" alt="Search">
+                                    </button>
+                                    <ul class="dropdown-menu searchDropdown dropdown-menu-end"
+                                        aria-labelledby="searchBtn" style="min-width: 250px;">
+                                        <input type="search" class="form-control rounded-3">
+                                    </ul>
+                                </div>
+                                <a href="#" class="position-relative authcartLink">
+                                    <img src="assets/images/favorite_icon.svg" alt="Favorite">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle">0</span>
+                                </a>
+                                <a href="cart.html" class="position-relative authcartLink">
+                                    <img src="assets/images/shopping-bag.svg" alt="Cart">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle">5</span>
+                                </a>
+                                <a href="login.html" class=" authcartLink">
+                                    <img src="assets/images/user-circle.svg" alt="">
+                                </a>
+                                <div class="position-relative">
+                                    <button class="menutogglebtn" type="button" id="extramenuitems"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                    <div class="dropdown-menu menudropdown dropdown-menu-end"
+                                        aria-labelledby="extramenuitems">
+                                        <div class="d-flex gap-3 flex-column pe-2"
+                                            style="max-height: calc(100vh - 150px); overflow-y: auto;">
+                                            <div class="d-lg-none d-block mainMenu">
+                                                <ul>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="inStock.html">
+                                                            <span class="text-uppercase">IN STOCK</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="newArrivals.html">
+                                                            <span class="text-uppercase">NEW ARRIVALs</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="bestSellers.html">
+                                                            <span class="text-uppercase">BEST SELLERs</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="sale&Promotion.html">
+                                                            <span class="text-uppercase">SALE & PROMOTIONS</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="someofakind.html">
+                                                            <span class="text-uppercase">SOME OF A KIND</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="d-lg-none d-block responsivemenuDivider"></div>
+                                            <div class="d-lg-none d-block categorymenu">
+                                                <div class="bottomLinklist flex-column align-items-start gap-2">
+
+                                                    <!-- START ACCORDION ITEM -->
+                                                    <div class="accordion-item w-100">
+                                                        <div
+                                                            class="accordion-toggle d-flex align-items-center justify-content-between">
+                                                            BEDROOM
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                        <div class="accordion-content">
+                                                            <h1>Category</h1>
+                                                            <ul>
+                                                                <li><a href="#">Link one</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                            <h1>Category</h1>
+                                                            <ul>
+                                                                <li><a href="#">Link one</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                            <h1>Category</h1>
+                                                            <ul>
+                                                                <li><a href="#">Link one</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ACCORDION ITEM -->
+
+                                                    <!-- START ACCORDION ITEM -->
+                                                    <div class="accordion-item w-100">
+                                                        <div
+                                                            class="accordion-toggle d-flex align-items-center justify-content-between">
+                                                            DINING & KITCHEN
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                        <div class="accordion-content">
+                                                            <ul>
+                                                                <li><a href="#">Link one c</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ACCORDION ITEM -->
+                                                    <!-- START ACCORDION ITEM -->
+                                                    <div class="accordion-item w-100">
+                                                        <div
+                                                            class="accordion-toggle d-flex align-items-center justify-content-between">
+                                                            LIVING ROOM
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                        <div class="accordion-content">
+                                                            <ul>
+                                                                <li><a href="#">Link one c</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ACCORDION ITEM -->
+                                                    <!-- START ACCORDION ITEM -->
+                                                    <div class="accordion-item w-100">
+                                                        <div
+                                                            class="accordion-toggle d-flex align-items-center justify-content-between">
+                                                            HOME OFFICE
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                        <div class="accordion-content">
+                                                            <ul>
+                                                                <li><a href="#">Link one c</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ACCORDION ITEM -->
+                                                    <!-- START ACCORDION ITEM -->
+                                                    <div class="accordion-item w-100">
+                                                        <div
+                                                            class="accordion-toggle d-flex align-items-center justify-content-between">
+                                                            Décor
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                        <div class="accordion-content">
+                                                            <ul>
+                                                                <li><a href="#">Link one c</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ACCORDION ITEM -->
+                                                    <!-- START ACCORDION ITEM -->
+                                                    <div class="accordion-item w-100">
+                                                        <div
+                                                            class="accordion-toggle d-flex align-items-center justify-content-between">
+                                                            COLLECTIONS
+                                                            <i class="fa-solid fa-angle-down"></i>
+                                                        </div>
+                                                        <div class="accordion-content">
+                                                            <ul>
+                                                                <li><a href="#">Link one c</a></li>
+                                                                <li><a href="#">Link two</a></li>
+                                                                <li><a href="#">Link three</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END ACCORDION ITEM -->
+                                                </div>
+                                            </div>
+                                            <div class="d-lg-none d-block responsivemenuDivider"></div>
+                                            <div class="policyitems">
+                                                <ul>
+
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="#">
+                                                            <span>FAQs</span>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="#">
+                                                            <span>terms & conditions </span>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="#">
+                                                            <span>privacy policy </span>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="#">
+                                                            <span>re-fund & Return policy </span>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item mb-2" href="#">
+                                                            <span>Shipping Policy</span>
+                                                            <span><i class="fa-solid fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bottom link area -->
+                    <div class="bottomLinklist_area d-none d-lg-block">
+                        <div class="bottomLinklist">
+                            <div class=" bottombarLink">
+                                <a href="#" type="button" class="link_content d-flex align-items-center">
+                                    BEDROOM <i class="fa-solid fa-angle-down"></i>
+                                    <!-- <img src="assets/images/arrowDown.svg" class="ms-1"> -->
+
+                                </a>
+                                <div class="sublinkList_area position-absolute container">
+                                    <div class="sublinklist_area_inner p-4">
+                                        <div class="row g-4">
+                                            <div class="col-lg-3 submemulistitem">
+                                                <h1>Category</h1>
+                                                <ul>
+                                                    <li><a class="d-inline-block" href="#">Link one</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link two</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link three</a></li>
+                                                </ul>
+                                                <h1>Category</h1>
+                                                <ul>
+                                                    <li><a class="d-inline-block" href="#">Link one</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link two</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link three</a></li>
+                                                </ul>
+                                                <h1>Category</h1>
+                                                <ul>
+                                                    <li><a class="d-inline-block" href="#">Link one</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link two</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link three</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 submemulistitem">
+                                                <h1>Category</h1>
+                                                <ul>
+                                                    <li><a class="d-inline-block" href="#">Link one</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link two</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link three</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 submemulistitem">
+                                                <h1>Category</h1>
+                                                <ul>
+                                                    <li><a class="d-inline-block" href="#">Link one</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link two</a></li>
+                                                    <li><a class="d-inline-block" href="#">Link three</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 submemulistitem">
+                                                <div class="submenu_image_box">
+                                                    <img src="assets/images/bed.webp" alt="">
+                                                </div>
+                                                <div class="submenu_image_box">
+                                                    <img src="assets/images/bed.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" bottombarLink position-relative">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    DINING & KITCHEN
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="sublinkList_area position-absolute otherSubmenu">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" bottombarLink position-relative">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    LIVING ROOM
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="sublinkList_area position-absolute otherSubmenu">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" bottombarLink position-relative">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    HOME OFFICE
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="sublinkList_area position-absolute otherSubmenu">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" bottombarLink position-relative">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    Décor
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="sublinkList_area position-absolute otherSubmenu">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" bottombarLink position-relative">
+                                <a href="#" class="link_content d-flex align-items-center">
+                                    COLLECTIONS
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <div class="sublinkList_area position-absolute otherSubmenu">
+                                    <div class="sublinklist_area_inner">
+                                        <ul>
+                                            <li><a href="#">Link one c</a></li>
+                                            <li><a href="#">Link two</a></li>
+                                            <li><a href="#">Link three</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================Header area end========================== -->
+
+
+    <section class="orderPlacedconfirm_area">
+        <div class="container">
+            <div class="orderPlaceSuccessfull_area">
+                <div class="oderPlaceSuccessFull_content">
+                    <div class="successfull_Checkmark_area d-flex justify-content-center align-items-center"
+                        style="height: 70px;">
+                        <div class="check-wrap" aria-hidden="true">
+                            <!-- viewBox 0 0 66 66, center at 33, radius 31 (so stroke 4 fits exactly) -->
+                            <svg id="check-svg" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-label="Success">
+                                <!-- background circle (will scale/fade in after check) -->
+                                <circle class="bg-circle" cx="33" cy="33" r="31" />
+
+                                <!-- ring stroke (drawn from top clockwise). 
+                                We rotate -90deg so stroke starts at top (12 o'clock). -->
+                                <g transform="rotate(-90 33 33)">
+                                    <circle class="ring" cx="33" cy="33" r="31" />
+                                </g>
+
+                                <!-- check mark path - coordinates chosen to sit nicely inside the circle -->
+                                <!-- M = move, L = line. Adjust if you want a different shape/size -->
+                                <path class="check" d="M22 34 L29.5 41 L44 26" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h1>
+                        Your order is successfully place!
+                    </h1>
+                    <p>Your order ID is #89267622</p>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="proceedToCheckoutBtn d-flex justify-content-center align-items-center">
+                            CONTINUE SHOPPING
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- font awesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"></script>
+
+    <!-- swipper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // On DOM ready, add .play to svg to start the sequenced animations.
+        // This also allows re-triggering if needed in future.
+        document.addEventListener('DOMContentLoaded', function () {
+            const svg = document.getElementById('check-svg');
+            // small timeout ensures render flush so animations run consistently
+            requestAnimationFrame(() => {
+                svg.classList.add('play');
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.accordion-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const parent = toggle.parentElement;
+                const isActive = parent.classList.contains('active');
+
+                // Close all
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Toggle current
+                if (!isActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
