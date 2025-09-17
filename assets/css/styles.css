@@ -1502,6 +1502,7 @@ background: #8e8e934d;
     margin-bottom: 7px;
     display: block;
     transition: all 0.3s ease;
+    height: 48px;
 }
 
 .product_card_title span {
