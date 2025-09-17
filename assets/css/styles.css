@@ -164,15 +164,14 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* যদি parent height fixed থাকে, তাহলে container height নেবে */
     width: 100%;
 }
 
 .authimg_box img {
     width: 100%;
-    /* stretch হবে না */
     height: 100%;
-    /* container height respect করবে */
+    object-fit: cover;
+    object-position: top;
 
 }
 
@@ -659,6 +658,13 @@ img {
     }
 }
 
+@media (min-width: 992px) {
+    #imagePopup .modal-dialog {
+        max-width: 662px !important;
+        margin: 1.75rem auto;
+    }
+}
+
 @media (max-height: 500px) {
     .authForm {
         padding-top: 12px !important;
@@ -670,6 +676,35 @@ img {
 
     .authrecover_area p {
         margin-bottom: 27px;
+    }
+}
+
+@media (max-height: 850px) {
+    #imagePopup .productDetailsMainSlider {
+        max-height: 473px;
+        min-height: unset;
+    }
+}
+
+@media (max-height: 500px) {
+    #imagePopup .productDetailsMainSlider {
+        max-height: 280px;
+        min-height: unset;
+    }
+
+    #imagePopup .popupimgbox {
+        aspect-ratio: 465/359;
+    }
+}
+
+@media (max-height: 400px) {
+    #imagePopup .productDetailsMainSlider {
+        max-height: 240px;
+        min-height: unset;
+    }
+
+    #imagePopup .popupimgbox {
+        aspect-ratio: 465/309;
     }
 }
 
@@ -2743,10 +2778,7 @@ footer p {
     align-items: center;
 }
 
-#imagePopup .productDetailsMainSlider {
-    max-height: 320px;
-    min-height: unset;
-}
+
 
 #imagePopup .button_area {
     position: relative;
@@ -3127,6 +3159,9 @@ footer p {
 /* ============================================= */
 /* ===============Cart page start=============== */
 /* ============================================= */
+.cart_area {
+    min-height: calc(100vh - 254px);
+}
 
 .cart_item_table_area {
     border: 1px solid #E4E7E9;
@@ -3170,6 +3205,12 @@ footer p {
 .added_product_table table tbody tr td {
     vertical-align: middle;
     padding: 24px 10px;
+}
+
+.added_product_table table thead tr th:first-child,
+.added_product_table table tbody tr td:first-child {
+    display: flex;
+    justify-content: center;
 }
 
 .cartitemDeletebtn {
@@ -3264,7 +3305,7 @@ footer p {
     letter-spacing: 8%;
     text-align: center;
     text-transform: uppercase;
-    padding: 19px 27px;
+    padding: 14px 27px;
     display: flex;
     align-items: center;
     justify-content: center;
