@@ -411,7 +411,7 @@ img {
     line-height: 100%;
     letter-spacing: 0%;
     color: #1E1E1E;
-    margin-bottom: 46px;
+    margin-bottom: 30px;
 }
 
 .otp_area {
@@ -439,6 +439,10 @@ img {
 
 .authrecover_area .authinput_feild input {
     border: 1px solid #D8D8D8 !important;
+}
+
+.authrecover_area .authForm {
+    padding-top: 0 !important;
 }
 
 @media (min-width:768px) {
@@ -471,7 +475,7 @@ img {
 
 @media (max-width: 992px) {
     .auth_inner h1 {
-        font-size: 37px;
+        font-size: 36px;
     }
 
     .auth_inner p {
@@ -536,7 +540,10 @@ img {
     }
 
     .d-label.floating {
-        transform: translateY(-24px);
+        /* transform: translateY(-24px); */
+        transform: translateY(-34px);
+        background: none;
+        color: #fff;
     }
 
     .authinput_feild input {
@@ -572,16 +579,14 @@ img {
     }
 
     .conditionalText a {
-        color: #04ff69;
+        color: #9CB31A;
     }
 
     .authrecover_area legend {
         font-size: 35px;
     }
 
-    .authrecover_area .authForm {
-        padding-top: 0 !important;
-    }
+
 
     .createPassauthrecover_area legend {
         font-size: 29px;
@@ -634,7 +639,7 @@ img {
 
 @media (max-width: 350px) {
     .auth_inner h1 {
-        font-size: 29px;
+        font-size: 28px;
     }
 
     .auth_inner p {
@@ -665,9 +670,62 @@ img {
     }
 }
 
+@media (max-height: 600px) and (min-width: 768px) {
+    
+    .auth_content_area{
+        padding-top: 150px;
+         padding-bottom: 20px;
+    }
+ 
+   
+}
+@media (max-height: 600px) and (max-width: 768px) {
+    .auth_content_area {
+        position: absolute;
+        overflow-y: auto;
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+    /* .auth_content_area{
+        padding-top: 150px;
+    } */
+ 
+   
+}
+@media (max-height: 600px) and (max-width: 350px) {
+   
+    .auth_content_area{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+ 
+   
+}
+@media (max-height: 600px) and (max-width: 800px) {
+   
+    /* .auth_content_area{
+        padding-top: 170px;
+        padding-bottom: 40px;
+    } */
+ 
+   
+}
+@media (max-height: 400px) and (max-width: 802px) {
+   
+    /* .auth_content_area{
+        padding-top: 250px !important;
+        padding-bottom: 40px;
+    } */
+ 
+   
+}
 @media (max-height: 500px) {
     .authForm {
-        padding-top: 12px !important;
+        /* padding-top: 12px !important; */
+        padding-top: 20px !important;
+    }
+    .authentication_full_wrapper{
+        overflow-y: auto;
     }
 
     .orText {
@@ -2890,6 +2948,10 @@ footer p {
         font-size: 12px;
     }
 
+    #quickViewModal .productInformationtable tr td h3 {
+        font-size: 14px;
+    }
+
     .productInformationtable tr td p {
         font-size: 13px;
         line-height: 20px;
@@ -2971,8 +3033,12 @@ footer p {
     }
 
     #quickViewModal .productInformationtable tr td h3 {
-        font-size: 13px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 36px;
+    }
+
+    #quickViewModal .productInformationtable tr td p {
+        font-size: 15px;
     }
 
     .productInformationtable tr td p {
@@ -3037,6 +3103,11 @@ footer p {
     #quickViewModal .modal-body {
         padding: 10px 10px 40px 10px;
     }
+
+    #quickViewModal .productInformationtable tr td {
+        padding-right: 5px;
+    }
+
 }
 
 @media (max-width:420px) {
@@ -3057,6 +3128,11 @@ footer p {
         font-size: 13px;
         line-height: 17px;
     }
+
+    #quickViewModal .productInformationtable tr td p {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width:370px) {
@@ -3086,6 +3162,15 @@ footer p {
     .colorSizeandQuantityselector {
         flex-direction: column !important;
     }
+
+    #quickViewModal .productInformationtable tr td h3 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    #quickViewModal .productInformationtable tr td p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 346px) {
@@ -3107,6 +3192,19 @@ footer p {
     .productInformationtable tr td p {
         font-size: 11px;
         line-height: 15px;
+    }
+
+    #quickViewModal .productInformationtable tr td h3 {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    #quickViewModal .productInformationtable tr td {
+        padding-right: 5px;
+    }
+
+    #quickViewModal .productInformationtable tr td p {
+        font-size: 11px;
     }
 }
 
@@ -3211,6 +3309,10 @@ footer p {
 .added_product_table table tbody tr td:first-child {
     display: flex;
     justify-content: center;
+}
+
+.cartItemDeletebtn_area {
+    height: 51px;
 }
 
 .cartitemDeletebtn {
@@ -3410,10 +3512,7 @@ footer p {
         padding: 10px 3px;
     }
 
-    .cartproductImgBox {
-        max-height: 40px;
-        padding: 1px;
-    }
+
 
     .cartProductName {
         font-size: 11px;
@@ -3565,6 +3664,10 @@ footer p {
     .cart_item_table_area h1 {
         padding-left: 0 !important;
         padding-top: 5px !important;
+    }
+
+    .cartItemDeletebtn_area {
+        height: fit-content !important;
     }
 }
 
@@ -3814,6 +3917,36 @@ svg.play .bg-circle {
     top: 0;
     right: 35px;
 
+}
+
+@media (max-height: 600px) {
+    .oderPlaceSuccessFull_content h1 {
+        margin-top: 10px;
+    }
+
+    .oderPlaceSuccessFull_content p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-height: 500px) {
+    .oderPlaceSuccessFull_content h1 {
+        margin-top: 0;
+    }
+
+    .oderPlaceSuccessFull_content p {
+        margin-bottom: 0;
+    }
+
+    .check-wrap {
+        width: 50px;
+        height: 50px;
+    }
+
+    .oderPlaceSuccessFull_content h1 {
+        font-size: 21px;
+        line-height: 27px;
+    }
 }
 
 /* pre loader end */
