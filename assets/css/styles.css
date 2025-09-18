@@ -377,10 +377,12 @@ img {
     letter-spacing: 0%;
     color: #007AFF;
 }
-
-.authrecover_area {
+.authrecover_area_outer{
     max-width: 668px;
     width: 90%;
+}
+.authrecover_area {
+    width: 100%;
     background: #ffffff;
     box-shadow: 0px 4px 30px 0px #0000001C;
     border-radius: 8px;
@@ -483,7 +485,7 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
     /* .auth_content_area {
         position: fixed;
@@ -540,7 +542,9 @@ img {
     }
 
     .d-label.floating {
-        /* transform: translateY(-24px); */
+        transform: translateY(-24px);
+    }
+    .auth_content_area .d-label.floating {
         transform: translateY(-34px);
         background: none;
         color: #fff;
@@ -601,13 +605,17 @@ img {
 }
 
 @media (max-width: 440px) {
+      .auth_inner {
+    width: 100%;
+    padding: 20px 5px;
+  }
     .auth_inner h1 {
         font-size: 32px;
     }
 
-    .auth_inner p {
+    /* .auth_inner p {
         font-size: 10px;
-    }
+    } */
 
     .authrecover_area legend {
         font-size: 28px;
@@ -642,8 +650,8 @@ img {
         font-size: 28px;
     }
 
-    .auth_inner p {
-        font-size: 9px;
+    .authForm{
+        padding-top: 20px;
     }
 
     .authForm .forgorPasswordlink {
@@ -670,11 +678,25 @@ img {
     }
 }
 
+
 @media (max-height: 600px) and (min-width: 768px) {
     
     .auth_content_area{
         padding-top: 150px;
          padding-bottom: 20px;
+    }
+    .authrecover_area{
+        margin-top: 150px;
+        margin-bottom: 10px;
+    }
+ 
+   
+}
+@media (max-height: 400px) and (min-width: 568px) {
+    
+    .authrecover_area{
+        margin-top: 150px;
+        margin-bottom: 10px;
     }
  
    
@@ -1697,7 +1719,7 @@ background: #8e8e934d;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    padding: 0;
     width: 100%;
     transition: all 0.3s ease;
 }
@@ -3249,6 +3271,34 @@ footer p {
         padding-right: 10px;
     }
 }
+
+.size_qty_wrapper{
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 576px থেকে 768px এর মধ্যে 50%-50% side by side */
+@media (min-width: 576px) and (max-width: 768px) {
+  .size_qty_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+ .size_qty_wrapper .size_select,
+ .size_qty_wrapper .quantity_set {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+ .size_qty_wrapper .size_select {
+    margin-right: 8px; /* ছোট gap দিবে */
+  }
+}
+@media (max-width: 376px) {
+.size_qty_wrapper{
+    width: 100%;
+}
+}
+
 
 /* ======================================================== */
 /* ===============product details page end================= */
