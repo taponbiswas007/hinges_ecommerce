@@ -455,7 +455,7 @@ img {
 
 @media (min-width:992px) {
     .auth_content_area {
-        width: 500px;
+        width: 620px;
     }
 
     /* #quickViewModal .modal-content{
@@ -834,6 +834,7 @@ img {
     }
 
 }
+
 
 /* =================authentication page end================ */
 
