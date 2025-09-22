@@ -742,7 +742,7 @@ img {
 }
 
 
-@media (max-height: 600px) and (min-width: 768px) {
+@media (max-height: 450px) and (min-width: 768px) {
 
     .auth_content_area {
         padding-top: 150px;
