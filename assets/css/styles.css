@@ -1291,7 +1291,7 @@ img {
     vertical-align: middle;
     color: #2D1817;
     text-transform: uppercase;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .bottomLinklist a img {
