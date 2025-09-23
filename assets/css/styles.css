@@ -1345,7 +1345,7 @@ img {
     -webkit-transform: unset !important;
         -ms-transform: unset !important;
             transform: unset !important;
-    right: 0 !important;
+    right: -15px !important;
 }
 
 .bottombarLink:hover .sublinkList_area {
@@ -1414,11 +1414,11 @@ background: #8e8e934d;
 
 @media (max-width: 1200px) {
     .topbarlink_list a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .bottomLinklist a {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
